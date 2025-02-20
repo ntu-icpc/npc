@@ -7,7 +7,7 @@ layout: home
 
 Welcome to NTUPC!
 
-# About
+## About
 
 About the NTUPC.
 
