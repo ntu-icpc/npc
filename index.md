@@ -1,13 +1,15 @@
 ---
-title: Rules
+title: NTUPC
 layout: home
 ---
 
-# Rules
+# Introduction
 
-## 1. Some Rules
+Welcome to NTUPC!
 
-Some rules[^1].
+# About
+
+About the NTUPC.
 
 ----
 
