@@ -1,6 +1,8 @@
 ---
 title: Rules
 layout: page
+nav_order: 2
+parent: Contests
 ---
 
 # Rules
