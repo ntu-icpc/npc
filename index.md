@@ -8,10 +8,4 @@ nav_order: 1
 
 Welcome to NTUPC!
 
-## About
-
-About the NTUPC.
-
-----
-
-[^1]: Some footnotes.
+[docs](https://just-the-docs.com/)
