@@ -5,12 +5,15 @@ parent: First Contest
 nav_order: 1
 ---
 
-# Template
+# Problem A
 
 $$
 e^{i\pi} + 1 = 0
 $$
 
+## Template
+
+### Python
 
 ```python
 class Solution:
@@ -25,6 +28,6 @@ if __name__ == "__main__":
     print(Solution.solve(X, Y).upper())
 ```
 
-# Solution
+## Solution
 
 Coming Soon
