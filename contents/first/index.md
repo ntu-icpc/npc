@@ -5,6 +5,8 @@ parent: Contests
 nav_order: 1
 ---
 
-# Introduction
+# NTUPC25: The 1st Contest
 
-Introduction to the contests.
+## Introduction
+
+**NTU Programming Contest 2025: The 1st Contest** is organized by the International Collegiate Programming Contest (ICPC) teams in the College of Computing and Data Science (CCDS), Nanyang Technological University (NTU). The contest aims to promote competitive programming in NTU's community. Moreover, the contest aims to train students to be better problem solvers in facing the Online Assessment (OA) during job seeking.
