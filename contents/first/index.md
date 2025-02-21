@@ -1,5 +1,5 @@
 ---
-title: First Contest
+title: NTUPC25 The 1st Contest
 layout: page
 parent: Contests
 nav_order: 1
