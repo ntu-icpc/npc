@@ -15,14 +15,14 @@ nav_order: 100002
 
 ## Course Materials
 
-- [MIT 6.006 Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
-- [MIT 6.046J Design and Analysis of Algorithms](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/)
-- [Stanford CS161 Design and Analysis of Algorithms](https://stanford-cs161.github.io/)
-- [Berkeley CS170 Efficient Algorithms and Intractable Problems](https://cs170.org/)
+- [MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
+- [MIT 6.046J: Design and Analysis of Algorithms](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/)
+- [Stanford CS161: Design and Analysis of Algorithms](https://stanford-cs161.github.io/)
+- [Berkeley CS170: Efficient Algorithms and Intractable Problems](https://cs170.org/)
 - [CMU 15-451/651: Algorithm Design and Analysis](https://www.cs.cmu.edu/afs/cs/Web/People/15451/index.html)
 - [CMU 15-850: Advanced Algorithms](https://www.cs.cmu.edu/~15850/)
 - [MIT 6.851: Advanced Data Structures](https://courses.csail.mit.edu/6.851/)
-- [MIT 6.854/18.415 Advanced Algorithms](https://people.csail.mit.edu/moitra/854.html)
+- [MIT 6.854/18.415: Advanced Algorithms](https://people.csail.mit.edu/moitra/854.html)
 - [Stanford CS97SI: Introduction to Programming Contests](https://web.stanford.edu/class/cs97si/)
 
 ## Tools
