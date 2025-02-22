@@ -1,5 +1,5 @@
 ---
-title: Nanyang PC
+title: Nanyang Programming Contest
 layout: home
 nav_order: 1
 ---
