@@ -7,10 +7,10 @@ nav_order: 1
 
 # NPC25: The 1st Contest
 
-<!-- <iframe src="https://free.timeanddate.com/countdown/i9rzs3rh/n236/cf100/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pcfff/tcf1d8e7/fn3/fs140/szw320/szh135/tatTime%20left%20to%20NPC%201st%20in/tac000/tptTime%20since%20NPC%201st%20started%20in/tpc000/iso2025-02-23T00:00:00" allowtransparency="true" frameborder="0" width="320" height="135" style="display: block; margin: 0 auto;"></iframe> -->
-<!-- <iframe src="https://free.timeanddate.com/countdown/i9rzs3rh/n236/cf12/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pcfff/tcf1d8e7/fn3/fs140/szw320/szh135/tatTime%20left%20to%20NPC%201st%20in/tac000/tptTime%20since%20NPC%201st%20started%20in/tpc000/iso2025-03-15T14:00:00" allowtransparency="true" frameborder="0" width="305" height="63" style="display: block; margin: 0 auto;"></iframe> -->
 <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-<a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="flip3" data-timezone="Asia/Singapore" data-date="2025-03-15 14:00">Countdown Timer</a>
+<a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="flip3" data-timezone="Asia/Singapore" data-date="2025-03-15 14:00">
+Nanyang Programming Contest 2025: The 1st Contest Countdown
+</a>
 
 ## Introduction
 
