@@ -13,7 +13,7 @@ nav_order: 1
 
 ## Details of the Contest
 
-- **Date**: 18th March 2025
+- **Date**: 15th March 2025
 - **Time**: 1:30PM - 5:00PM
 - **Venue**: Software Project Lab
 
