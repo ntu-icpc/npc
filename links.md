@@ -28,6 +28,6 @@ nav_order: 100002
 ## Tools
 
 - [Graph Visualizer](https://csacademy.com/app/graph_editor/)
-- [VisuAlgo](https://visualgo.net/)
 - [Algorithm Visualizer](https://algorithm-visualizer.org/)
-- [OEIS](https://oeis.org/)
+- [VisuAlgo: Visualising Data Structures and Algorithms through Animation](https://visualgo.net/)
+- [OEIS: The On-Line Encyclopedia of Integer Sequences](https://oeis.org/)
