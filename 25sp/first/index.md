@@ -7,6 +7,9 @@ nav_order: 1
 
 # NPC25: The 1st Contest
 
+<!-- center -->
+<iframe src="https://free.timeanddate.com/countdown/i9rzrbuo/n236/cf11/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcbfd2f0/fs100/szw320/szh135/tac000/tpc000/mac000/mpc000/iso2025-03-15T14:00:00" allowtransparency="true" frameborder="0" width="301" height="39" style="display: block; margin: 0 auto;"></iframe>
+
 ## Introduction
 
 **Nanyang Programming Contest (NPC) 2025: The 1st Contest** is organized by the International Collegiate Programming Contest (ICPC) teams in the College of Computing and Data Science (CCDS), Nanyang Technological University (NTU). The contest aims to promote competitive programming in NTU's community. Moreover, the contest aims to train students to be better problem solvers in facing the Online Assessment (OA) during job seeking.
@@ -15,7 +18,6 @@ nav_order: 1
 
 - **Date**: 15th March 2025
 - **Time**: 1:30PM - 5:00PM
-- **Contest Period**: (https://www.timeanddate.com/worldclock/fixedtime.html?iso=20250315T1400&p1=236&msg=Nanyang%20Programming%20Contest%3a%20The%201st%20Contest&fromtheme=generic) <iframe src="https://free.timeanddate.com/countdown/i9rzrbuo/n236/cf11/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcbfd2f0/fs100/szw320/szh135/tac000/tpc000/mac000/mpc000/iso2025-03-15T14:00:00" allowtransparency="true" frameborder="0" width="301" height="39"></iframe>
 - **Venue**: Software Project Lab
 
 | Time              | Details                               |
