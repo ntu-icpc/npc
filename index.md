@@ -1,5 +1,5 @@
 ---
-title: About
+title: Nanyang PC
 layout: home
 nav_order: 1
 ---
