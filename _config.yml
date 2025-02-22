@@ -2,7 +2,7 @@ title: NTUPC
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 
-url: https://ntu-icpc.github.io/ntupc/
+url: https://ntu-icpc.github.io/npc/
 
 aux_links:
   NTU: https://www.ntu.edu.sg/
