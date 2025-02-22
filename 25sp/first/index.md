@@ -22,11 +22,11 @@ Nanyang Programming Contest 2025: The 1st Contest
 - **Time**: 1:30PM - 5:00PM
 - **Venue**: Software Project Lab
 
-| Time              | Details                               |
-|------------------|--------------------------------------|
-| 1:30PM - 2:00PM  | Registration & Pre-contest preparation |
-| 2:00PM - 4:00PM  | Contest                              |
-| 4:00PM - 5:00PM  | Contest Discussion                  |
+| Time            | Details                                |
+| --------------- | -------------------------------------- |
+| 1:30PM - 2:00PM | Registration & Pre-contest preparation |
+| 2:00PM - 4:00PM | Contest                                |
+| 4:00PM - 5:00PM | Contest Discussion                     |
 
 The contest discussion is conducted to discuss the solutions to the problems in the contest.
 
@@ -38,7 +38,7 @@ The contestant must be a matriculated undergraduate student at Nanyang Technolog
 
 ### Contest Tasks
 
-The contest consists of 4 to 8 algorithmic problems which are to be solved by writing code. Each problem is given a problem score which is the maximum attainable score from that problem. Each problem has a time limit and memory limit, which are the maximum allowable runtime and maximum allowable memory size, respectively. 
+The contest consists of 4 to 8 algorithmic problems which are to be solved by writing code. Each problem is given a problem score which is the maximum attainable score from that problem. Each problem has a time limit and memory limit, which are the maximum allowable runtime and maximum allowable memory size, respectively.
 
 ### Scoring of the contest
 
@@ -58,6 +58,5 @@ The ranking is sorted according to the following order.
 The prizes are awarded as follows.
 
 - Roughly the top $$X \%$$ will be awarded the gold medal.
-- Roughly the top $$Y \%$$ will be awarded the silver medal. 
+- Roughly the top $$Y \%$$ will be awarded the silver medal.
 - Roughly the top $$Z \%$$ will be awarded the bronze medal.
-
