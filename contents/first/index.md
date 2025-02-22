@@ -1,15 +1,15 @@
 ---
-title: NTUPC25 The 1st Contest
+title: NPC25 The 1st Contest
 layout: page
 parent: Contests
 nav_order: 1
 ---
 
-# NTUPC25: The 1st Contest
+# Nanyang Programming Contest 25: The 1st Contest
 
 ## Introduction
 
-**NTU Programming Contest 2025: The 1st Contest** is organized by the International Collegiate Programming Contest (ICPC) teams in the College of Computing and Data Science (CCDS), Nanyang Technological University (NTU). The contest aims to promote competitive programming in NTU's community. Moreover, the contest aims to train students to be better problem solvers in facing the Online Assessment (OA) during job seeking.
+**Nanyang Programming Contest 2025: The 1st Contest** is organized by the International Collegiate Programming Contest (ICPC) teams in the College of Computing and Data Science (CCDS), Nanyang Technological University (NTU). The contest aims to promote competitive programming in NTU's community. Moreover, the contest aims to train students to be better problem solvers in facing the Online Assessment (OA) during job seeking.
 
 ## Details of the Contest
 
@@ -37,7 +37,7 @@ The contest consists of 4 to 8 algorithmic problems which are to be solved by wr
 
 ### Scoring of the contest
 
-The contest adopts the rules known as "Partial Scoring". Each solution (code) submitted to each problem is known as a submission. The submission is tested against multiple test cases that are not revealed to the contestant. A submission passes a test case if the solution produces the correct output within the time limit and memory limit of the problem. The score of the problem for each submission is the multiplication of the problem score and the fraction of test cases passed by the submission over the total number of test cases for the problem. Mathematically, suppose the problem $$i$$ has a maximum score of $$s_i$$ and $$t_i$$ test cases. If a submission passes $$r_i$$ (which is less than or equal to $t_i$), the score for the submission is $$s_i \cdot \frac{r_i}{t_i}$$. The score for the problem is the maximum score out of all submissions. The score of the contestant is the **sum** of scores the contestant gets for each problem.
+The contest adopts the rules known as "Partial Scoring". Each solution (code) submitted to each problem is known as a submission. The submission is tested against multiple test cases that are not revealed to the contestant. A submission passes a test case if the solution produces the correct output within the time limit and memory limit of the problem. The score of the problem for each submission is the multiplication of the problem score and the fraction of test cases passed by the submission over the total number of test cases for the problem. Mathematically, suppose the problem $$i$$ has a maximum score of $$s_i$$ and $$t_i$$ test cases. If a submission passes $$r_i$$ (which is less than or equal to $$t_i$$), the score for the submission is $$s_i \cdot \frac{r_i}{t_i}$$. The score for the problem is the maximum score out of all submissions. The score of the contestant is the **sum** of scores the contestant gets for each problem.
 
 ### Additional Remarks
 
