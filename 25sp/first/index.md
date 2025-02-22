@@ -7,8 +7,8 @@ nav_order: 1
 
 # NPC25: The 1st Contest
 
-<!-- center -->
-<iframe src="https://free.timeanddate.com/countdown/i9rzrbuo/n236/cf11/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcbfd2f0/fs100/szw320/szh135/tac000/tpc000/mac000/mpc000/iso2025-03-15T14:00:00" allowtransparency="true" frameborder="0" width="301" height="39" style="display: block; margin: 0 auto;"></iframe>
+<iframe src="https://free.timeanddate.com/countdown/i9rzs3rh/n236/cf100/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pcfff/tcf1d8e7/fn3/fs140/szw320/szh135/tatTime%20left%20to%20NPC%201st%20in/tac000/tptTime%20since%20NPC%201st%20started%20in/tpc000/iso2025-02-23T00:00:00" allowtransparency="true" frameborder="0" width="320" height="135" style="display: block; margin: 0 auto;"></iframe>
+
 
 ## Introduction
 
