@@ -24,7 +24,8 @@ Nanyang Programming Contest 2025: The 1st Contest
 
 | Time            | Details                                |
 | --------------- | -------------------------------------- |
-| 1:30PM - 2:00PM | Registration & Pre-contest preparation |
+| 1:15PM - 1:30PM | Registration                           |
+| 1:30PM - 2:00PM | Briefing & Pre-contest preparation     |   
 | 2:00PM - 4:00PM | Contest                                |
 | 4:00PM - 5:00PM | Contest Discussion                     |
 
