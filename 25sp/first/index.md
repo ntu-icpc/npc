@@ -43,7 +43,7 @@ The contest consists of 4 to 8 algorithmic problems which are to be solved by wr
 
 ### Scoring of the contest
 
-The contest adopts the rules known as "Partial Scoring". Each solution (code) submitted to each problem is known as a submission. The submission is tested against multiple test cases that are not revealed to the contestant. A submission passes a test case if the solution produces the correct output within the time limit and memory limit of the problem. The score of the problem for each submission is the multiplication of the problem score and the fraction of test cases passed by the submission over the total number of test cases for the problem. Mathematically, suppose the problem $$i$$ has a maximum score of $$s_i$$ and $$t_i$$ test cases. If a submission passes $$r_i$$ (which is less than or equal to $$t_i$$), the score for the submission is $$s_i \cdot \frac{r_i}{t_i}$$. The score for the problem is the maximum score out of all submissions. The score of the contestant is the **sum** of scores the contestant gets for each problem.
+The contest adopts the rules known as "Partial Scoring". Each solution (code) submitted to each problem is known as a submission. The submission is tested against multiple test cases that are not revealed to the contestant. A submission passes a test case if the solution produces the correct output within the time limit and memory limit of the problem. The score of the problem for each submission is the multiplication of the problem score and the fraction of test cases passed by the submission over the total number of test cases for the problem. Mathematically, suppose the problem \(i\) has a maximum score of \(s_i\) and \(t_i\) test cases. If a submission passes \(r_i\) (which is less than or equal to \(t_i\)), the score for the submission is \(s_i \cdot \frac{r_i}{t_i}\). The score for the problem is the maximum score out of all submissions. The score of the contestant is the **sum** of scores the contestant gets for each problem.
 
 ### Additional Remarks
 
@@ -58,17 +58,17 @@ The ranking is sorted according to the following order.
 
 The prizes are awarded as follows.
 
-- Contestants in the the top $$10 \%$$ in the ranking will be awarded the gold/silver/bronze prizes.
-- Contestants in the next $$10 \%$$ in the ranking will be given consolation prizes.
+- Contestants in the the top \(10 \%\) in the ranking will be awarded the gold/silver/bronze prizes.
+- Contestants in the next \(10 \%\) in the ranking will be given consolation prizes.
 
 | Tiers           | Prizes      |
 | --------------- | ----------- |
-| Gold            | 100 Sgd     |  
-| Silver          | 75 Sgd      |                                
-| Bronze          | 50 Sgd      |
-| Consolation     | 20 Sgd      |
+| Gold            | 100 SGD     |  
+| Silver          | 75 SGD      |                                
+| Bronze          | 50 SGD      |
+| Consolation     | 20 SGD      |
 
-* You are in the top $X \%$ if you your ranking is less than or equal to $\frac{X}{100} \cdot N$, where $N$ is the number of contestants that are both present in the lab and submit at least one submission.
+* You are in the top \(X \%\) if you your ranking is less than or equal to \(\frac{X}{100} \cdot N\), where \(N\) is the number of contestants that are both present in the lab and submit at least one submission.
 
 * As it is our first time in organizing programming contest, the details are subject to changes.
 
