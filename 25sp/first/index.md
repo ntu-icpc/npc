@@ -57,6 +57,19 @@ The ranking is sorted according to the following order.
 
 The prizes are awarded as follows.
 
-- Roughly the top $$X \%$$ will be awarded the gold medal.
-- Roughly the top $$Y \%$$ will be awarded the silver medal.
-- Roughly the top $$Z \%$$ will be awarded the bronze medal.
+- Contestants in the the top $$10 \%$$ in the ranking will be awarded the gold/silver/bronze prizes.
+- Contestants in the next $$10 \%$$ in the ranking will be given consolation prizes.
+
+| Tiers           | Prizes      |
+| --------------- | ----------- |
+| Gold            | 100 Sgd     |  
+| Silver          | 75 Sgd      |                                
+| Bronze          | 50 Sgd      |
+| Consolation     | 20 Sgd      |
+
+* You are in the top $X \%$ if you your ranking is less than or equal to $\frac{X}{100} \cdot N$, where $N$ is the number of contestants that are both present in the lab and submit at least one submission.
+
+* As it is our first time in organizing programming contest, the details are subject to changes.
+
+
+
