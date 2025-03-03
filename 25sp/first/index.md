@@ -33,7 +33,7 @@ The contest discussion is conducted to discuss the solutions to the problems in 
 
 ## Eligibility Requirements
 
-The contestant must be a matriculated undergraduate student at Nanyang Technological University (NTU). If the contestant has been accepted to represent NTU in any ICPC season, the contestant is **not** allowed to participate in this contest.
+The contest is open to all CCDS students.  However, if a contestant has represented NTU in ICPC in any season, the contestant is **not** eligible in this contest.
 
 ## Contest Format (Partial Scoring)
 
