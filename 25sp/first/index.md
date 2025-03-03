@@ -68,8 +68,6 @@ The prizes are awarded as follows.
 | Bronze          | 50 SGD      |
 | Consolation     | 20 SGD      |
 
-* You are in the top $$X \%$$ if you your ranking is less than or equal to $$\frac{X}{100} \cdot N$$, where $$N$$ is the number of contestants that are both present in the lab and submit at least one submission.
-
 * As it is our first time in organizing programming contest, the details are subject to changes.
 
 
