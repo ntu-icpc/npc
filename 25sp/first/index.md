@@ -20,7 +20,7 @@ Nanyang Programming Contest 2025: The 1st Contest
 
 - **Date**: 15th March 2025
 - **Time**: 1:30PM - 5:00PM
-- **Venue**: Software Project Lab
+- **Venue**: Software Project Lab (N4-B1B-11)
 
 | Time            | Details                                |
 | --------------- | -------------------------------------- |
