@@ -70,5 +70,7 @@ The prizes are awarded as follows.
 
 * As it is our first time in organizing programming contest, the details are subject to changes.
 
+## Frequently-Asked-Question (FAQ)
+### 1. __Are we allowed to refer any online resources or AI resources?__
 
-
+No, you are not allowed to refer to any online resources or use any AI tools such as ChatGPT, Copilot, etc.
