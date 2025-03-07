@@ -15,7 +15,7 @@ nav_order: 100003
 | Clang | 11.0.0 |
 | GDB | 14.2 |
 | OpenJDK | 23.0.2 |
-| Python | 3.12.9 |
+| CPython | 3.12.9 |
 | PyPy | 7.3.19 |
 | Miniconda | 25.1.1 |
 | Go | 1.24.1 |
