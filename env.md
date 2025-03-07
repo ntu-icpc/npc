@@ -8,15 +8,17 @@ nav_order: 100003
 
 ## Summary
 
-- VSCode: 1.98
-- GCC: 13.3.0
-- Clang: 11.0.0
-- GDB: 14.2
-- OpenJDK: 23.0.2
-- Python: 3.12.9
-- PyPy: 7.3.19
-- Miniconda: 25.1.1
-- Go: 1.24.1
+| Software | Version |
+| -------- | ------- |
+| VSCode | 1.98 |
+| GCC | 13.3.0 |
+| Clang | 11.0.0 |
+| GDB | 14.2 |
+| OpenJDK | 23.0.2 |
+| Python | 3.12.9 |
+| PyPy | 7.3.19 |
+| Miniconda | 25.1.1 |
+| Go | 1.24.1 |
 
 ## C/C++
 
