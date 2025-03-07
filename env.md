@@ -8,8 +8,10 @@ nav_order: 100003
 
 ## C/C++
 
+### GCC
+
 ```sh
-> gcc -v
+$ gcc -v
 Using built-in specs.
 COLLECT_GCC=/usr/bin/gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-msys/13.3.0/lto-wrapper.exe
@@ -19,4 +21,25 @@ Configured with: /c/S/B/src/gcc-13.3.0/configure --build=x86_64-pc-msys --prefix
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 13.3.0 (GCC)
+```
+
+### Clang
+
+```sh
+$ clang -v
+clang version 11.0.0 (https://github.com/msys2/MSYS2-packages 9ef552a3c4cc9410d2b1fb6f22a0cdda3bc09a64)
+Target: x86_64-pc-windows-msys
+Thread model: posix
+InstalledDir: /usr/bin
+```
+
+### GDB
+
+```sh
+$ gdb -v
+GNU gdb (GDB) 14.2
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
 ```
