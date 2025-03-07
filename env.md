@@ -6,6 +6,18 @@ nav_order: 100003
 
 # Environment
 
+## Summary
+
+- VSCode: 1.98
+- GCC: 13.3.0
+- Clang: 11.0.0
+- GDB: 14.2
+- OpenJDK: 23.0.2
+- Python: 3.12.9
+- PyPy: 7.3.19
+- Miniconda: 25.1.1
+- Go: 1.24.1
+
 ## C/C++
 
 ### GCC
@@ -42,4 +54,44 @@ Copyright (C) 2023 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
+```
+
+## Java
+
+```sh
+> java --version
+openjdk 23.0.2 2025-01-21
+OpenJDK Runtime Environment (build 23.0.2+7-58)
+OpenJDK 64-Bit Server VM (build 23.0.2+7-58, mixed mode, sharing)
+```
+
+## Python
+
+### CPython
+
+```sh
+$ python --version
+Python 3.12.9
+```
+
+### PyPy
+
+```sh
+$ pypy3 --version
+Python 3.11.11 (0253c85bf5f8, Feb 26 2025, 10:43:25)
+[PyPy 7.3.19 with MSC v.1941 64 bit (AMD64)]
+```
+
+### Miniconda
+
+```sh
+$ conda --version
+conda 25.1.1
+```
+
+## Go
+
+```sh
+$ go version
+go version go1.24.1 windows/amd64
 ```
