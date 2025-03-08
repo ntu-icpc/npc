@@ -15,7 +15,7 @@ Nanyang Programming Contest 2025: The 1st Contest
 {: .new-title }
 > Annoucement
 >
-> - [2025-03-08] **Penalty Calculation Updated**: Previously, the penalty was the sum of the first successful submission times for each solved problem. Now, it is the **latest** submission time among all problems where the contestant scored above 0, based on the **earliest occurrence** of their highest-scoring submission.
+> - [2025-03-08] **Penalty Calculation Updated**: Previously, the penalty was the sum of the first successful submission times for each solved problem. Now, it is the **latest** submission time among all problems where the contestant scored above $$0$$, based on the **earliest occurrence** of their highest-scoring submission.
 > - [2025-03-08] We have listed the [Environment](../env) for the contest. Please check it out.
 
 ## Introduction
