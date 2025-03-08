@@ -78,10 +78,7 @@ The prizes are awarded as follows.
 
 ## Frequently-Asked-Question (FAQ)
 
-### 1. __Are we allowed to refer any online resources or AI resources?__
-
+1. **Are we allowed to refer any online resources or AI resources?**  
 No, you are not allowed to refer to any online resources or use any AI tools such as ChatGPT, Copilot, etc.
-
-### 2. __Are non-CCDS students allow to participate in the contest?__
-
+2. **Are non-CCDS students allow to participate in the contest?**  
 Yes, we allow non-CCDS students to join the contest. However, since it is our first contest, we shall focus and give more priority to CCDS students.
