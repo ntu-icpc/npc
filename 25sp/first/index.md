@@ -15,7 +15,7 @@ Nanyang Programming Contest 2025: The 1st Contest
 {: .new-title }
 > Annoucement
 >
-> [2025-03-08] xxxx
+> - [2025-03-08] xxxx
 
 ## Introduction
 
