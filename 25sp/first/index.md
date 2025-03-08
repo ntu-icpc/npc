@@ -60,7 +60,7 @@ We guarantee that all problems are solvable within the time limit and memory lim
 The ranking is sorted according to the following order.
 
 - The ranking is first sorted in descending order of the score of the contestant.
-- Among contestants with the same score, the ranking is sorted by penalty in ascending order. The penalty is the latest submission time among all problems where the contestant scored above 0. For each problem, the highest-scoring submission's earliest occurrence is used. Mathematically, let $$s_i$$ be the score of problem $$i$$, $$t_i$$ be the first time of the submission of problem $$i$$ that has the highest score, and $$p_i$$ be the penalty of problem $$i$$. Then, the penalty of the contestant is $$ \max_{s_i>0} (p_i) $$.
+- Among contestants with the same score, the ranking is sorted by penalty in ascending order. The penalty is the latest submission time among all problems where the contestant scored above 0. For each problem, the highest-scoring submission's earliest occurrence is used. Mathematically, let $$s_i$$ be the score of problem $$i$$, $$t_i$$ be the first time of the submission of problem $$i$$ that has the highest score, and $$p_i$$ be the penalty of problem $$i$$. Then, the penalty of the contestant is $$ \max_{s_i>0} \left\{p_i\right\} $$.
 
 The prizes are awarded as follows.
 
