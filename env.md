@@ -17,7 +17,7 @@ nav_order: 100003
 | [OpenJDK](https://openjdk.java.net/) | 23.0.2 |
 | [CPython](https://www.python.org/) | 3.12.9 |
 | [PyPy](https://www.pypy.org/) | 7.3.19 |
-| [Miniconda](https://docs.conda.io/en/latest/miniconda.html) | 25.1.1 |
+| [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main) | 25.1.1 |
 | [Go](https://go.dev/) | 1.24.1 |
 
 ## C/C++
