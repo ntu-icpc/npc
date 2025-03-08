@@ -10,15 +10,15 @@ nav_order: 100003
 
 | Software | Version |
 | -------- | ------- |
-| VSCode | 1.98 |
-| GCC | 13.3.0 |
-| Clang | 11.0.0 |
-| GDB | 14.2 |
-| OpenJDK | 23.0.2 |
-| CPython | 3.12.9 |
-| PyPy | 7.3.19 |
-| Miniconda | 25.1.1 |
-| Go | 1.24.1 |
+| [VSCode](https://code.visualstudio.com/) | 1.98 |
+| [GCC](https://gcc.gnu.org/) | 13.3.0 |
+| [Clang](https://clang.llvm.org/) | 11.0.0 |
+| [GDB](https://www.gnu.org/software/gdb/) | 14.2 |
+| [OpenJDK](https://openjdk.java.net/) | 23.0.2 |
+| [CPython](https://www.python.org/) | 3.12.9 |
+| [PyPy](https://www.pypy.org/) | 7.3.19 |
+| [Miniconda](https://docs.conda.io/en/latest/miniconda.html) | 25.1.1 |
+| [Go](https://go.dev/) | 1.24.1 |
 
 ## C/C++
 
