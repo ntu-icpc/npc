@@ -16,7 +16,7 @@ nav_order: 100003
 | [GDB](https://www.gnu.org/software/gdb/) | 14.2 |
 | [OpenJDK](https://openjdk.java.net/) | 23.0.2 |
 | [CPython](https://www.python.org/) | 3.12.9 |
-| [PyPy](https://www.pypy.org/) | 7.3.19 |
+| [PyPy](https://www.pypy.org/) | 3.11.11 - v7.3.19 |
 | [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main) | 25.1.1 |
 | [Go](https://go.dev/) | 1.24.1 |
 
