@@ -3,22 +3,26 @@ title: Environment
 layout: page
 nav_order: 100003
 ---
+# Environment
 
-# Judging Environment
+## Judging Environment
 
 The execution of the contest and the submissions are made on [Vjudge](https://vjudge.net/). However, the judging of the submissions is automatically sent to platforms of the source problem. Then, the result is sent back to Vjudge for score evaluation.
 
-# Local Environment
-## Hardware
+## Local Environment
+### Hardware
 
 Contestants are required to be in the lab to participate in the contest. Contestants write their code using the lab computer, keyboard and mouse. The contestants are not allowed to use their own personal devices during the contests.
 
-## Software
+### Software
 
 The contests are executed under a controlled environment. Only the following software are allowed. 
 1. **Code Editor**: Only the Visual Studio Code editor is allowed to be used during the contest. We allow the contestants to install language extensions such as Python, C/C++, Java to aid their coding. However, generative AI tools such as Copilot are **not** allowed. The contestants are allowed to use terminal only for navigation of files, compilation and execution of code. Please refrain from doing anything else in the terminal that would raise suspicious from the invigilator.
 2. **Template code**: Template code (in Python, C, C++ and Java) for each problem are given to all contestants. The template code contains all the necessary libraries, well-formatted input and output, and a class/function which is to be filled by the contestants. The inputs are passed to the class/function through parameters and the contestant is only expected to return the output from the function. The contestant is not required to write the standard input and output. The details of the parameters and return type will be written as comments in the template code. However, the contestant is allowed to modify the template code. The contestants is also allowed to not use the template code. 
-3. **Compilation**: The following are the summary of the local environment.
+3. **Documentation**: We allowed the use of the documentations mentioned in the [guide](../guide) 
+4. **Compilation**: We installed the compiler for some languages in the local machine. You may use terminal to compile your code. The summary and detailed of the local environment is in the next section.
+
+Remark: We may still allowed more software in future.
 ### Summary
 
 | Software | Version |
@@ -110,7 +114,3 @@ conda 25.1.1
 $ go version
 go version go1.24.1 windows/amd64
 ```
-
-4. **Documentation**: We allowed the use of the documentations mentioned in the [guide](../guide) 
-
-Remark: We may still allowed more software in future.
