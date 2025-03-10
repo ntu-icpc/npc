@@ -8,7 +8,7 @@ nav_order: 100003
 
 ## Judging Environment
 
-The execution of the contest and the submissions are made on Vjudge. However, the judging of the submissions is automatically sent to platforms of the source problem. Then, the result is sent back to Vjudge for score evaluation.
+The execution of the contest and the submissions are made on [Vjudge](https://vjudge.net/). However, the judging of the submissions is automatically sent to platforms of the source problem. Then, the result is sent back to Vjudge for score evaluation.
 
 ## Hardware
 
@@ -16,7 +16,7 @@ Contestants are required to be in the lab to participate in the contest. Contest
 
 ## Software
 
-Only the Visual Studio Code editor is allowed to be used during the contest. We allow the contestants to install language extensions such as Python, C/C++, Java to aid their coding. However, generative AI tools such as Copilot are \textbf{not} allowed. The contestants are allowed to use terminal only for navigation of files, compilation and execution of code. Please refrain from doing anything else in the terminal that would raise suspicious from the invigilator.
+Only the Visual Studio Code editor is allowed to be used during the contest. We allow the contestants to install language extensions such as Python, C/C++, Java to aid their coding. However, generative AI tools such as Copilot are **not** allowed. The contestants are allowed to use terminal only for navigation of files, compilation and execution of code. Please refrain from doing anything else in the terminal that would raise suspicious from the invigilator.
 
 Template code (in Python, C, C++ and Java) for each problem are given to all contestants. The template code contains all the necessary libraries, well-formatted input and output, and a class/function which is to be filled by the contestants. The inputs are passed to the class/function through parameters and the contestant is only expected to return the output from the function. The contestant is not required to write the standard input and output. The details of the parameters and return type will be written as comments in the template code. However, the contestant is allowed to modify the template code.
 
