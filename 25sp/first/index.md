@@ -27,7 +27,7 @@ Nanyang Programming Contest 2025: The 1st Contest
 
 - **Date**: 15th March 2025
 - **Time**: 1:30PM - 5:00PM
-- **Venue**: Software Project Lab (N4-B1B-11)
+- **Venue**: Software Project Lab ([N4-B1B-11](https://maps.ntu.edu.sg/#/ntu/d386ffa80e4e46f286d17f08/poi/details/8f9aa110547f4ccf8ba3a97e))
 
 | Time            | Details                                |
 | --------------- | -------------------------------------- |
