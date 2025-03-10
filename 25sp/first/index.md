@@ -83,3 +83,5 @@ The prizes are awarded as follows.
 No, you are not allowed to refer to any online resources or use any AI tools such as ChatGPT, Copilot, etc.
 2. **Are non-CCDS students allow to participate in the contest?**  
 Yes, we allow non-CCDS students to join the contest. However, since it is our first contest, we shall focus and give more priority to CCDS students.
+3. **Are we allowed to bring in any references materials (lecture slides, notes, templates, codebook, etc.)**
+No, you are not allowed to bring in any materials to the contest. However, we may allow certain specific materials. We will place the allowed materials in the lab computer. The details will be annouced soon.
