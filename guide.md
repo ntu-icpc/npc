@@ -94,47 +94,41 @@ In the competition, you cannot install extensions with AI. We have installed mos
 
 ### Python
 
-1. **Install Python**:
-   - Download from [python.org](https://www.python.org/downloads/)
-   - Ensure it's added to your PATH during installation
+#### CPython
 
-2. **Run a Python script**:
-   ```bash
-   python script.py
-   ```
-   or
-   ```bash
-   python3 script.py
-   ```
-   (depending on your installation)
+```bash
+python script.py
+```
 
-3. **Python doesn't require compilation** in the traditional sense, but you can:
-   - Check syntax without running:
-     ```bash
-     python -m py_compile script.py
-     ```
-   - Create a bytecode file:
-     ```bash
-     python -c "import py_compile; py_compile.compile('script.py')"
-     ```
+![](./assets/imgs/python_example.png)
 
-### Go
+#### PyPy
 
-1. **Install Go**:
-   - Download from [golang.org](https://golang.org/dl/)
-   - Follow the installation instructions for your OS
+```bash
+pypy3 script.py
+```
 
-2. **Compile and run in one step**:
-   ```bash
-   go run main.go
-   ```
+![](./assets/imgs/pypy_example.png)
 
-3. **Compile a Go program**:
-   ```bash
-   go build main.go
-   ```
-   This creates an executable file
+## Useful tools
 
-4. **Run the compiled program**:
-   - Windows: `main.exe`
-   - macOS/Linux: `./main`
+### Miniconda
+
+Miniconda is installed in the competition environment. You can create a new environment and install the packages you need.
+
+```bash
+conda create --name npc python=3.11
+conda activate npc
+```
+
+You can use Jupyter Notebook in the competition environment. See [here](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) for more information.
+
+### GDB
+
+GDB is installed in the competition environment. You can use it to debug your code.
+
+```bash
+gdb program_name
+```
+
+See [the official documentation](https://www.gnu.org/software/gdb/documentation/) for more information. And we strongly recommend you to read through [this tutorial](https://web.stanford.edu/class/archive/cs/cs107/cs107.1194/resources/gdb) to get familiar with GDB.
