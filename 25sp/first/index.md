@@ -77,6 +77,13 @@ The prizes are awarded as follows.
 
 * As it is our first time in organizing programming contest, the details are subject to changes.
 
+## Do's and Don't
+1. Contestants are only allowed to perform actions permitted within the local environemnt, such as navigating the references (details in [here](/../env)).
+2. During the contest, you are not allowed to write anything on the comments section in the contest page. If you need clarifications, you may raise your hand and ask the judge in the contest room.
+3. During the contest, contestants are prohibited from communicating with anyone except the judges and invigilators.
+4. Contestants are prohibited from submitting malicious codes, including but not limited to attacks on the judging server.
+5. If a contestant violates any of the aforementioned rules, the participant may be given a warning or even disqualify from the contest.
+
 ## Frequently-Asked-Question (FAQ)
 
 1. **Are we allowed to refer any online resources or AI resources?**  
