@@ -114,7 +114,7 @@ However, if you have some TLE issues, you can try [PyPy](#pypy).
 
 #### PyPy
 
-[PyPy](https://www.pypy.org/) is a faster alternative to CPython. You can use PyPy to speed up your code. However, PyPy may have some compatibility issues with some libraries.
+[PyPy](https://www.pypy.org/) is a faster alternative to CPython. According to the official website, PyPy is about 3 times faster than CPython. However, PyPy may have some compatibility issues with some libraries and you may have some issues if you are using modern Python features.
 
 ```bash
 pypy3 script.py
