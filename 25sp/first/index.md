@@ -15,7 +15,7 @@ Nanyang Programming Contest 2025: The 1st Contest
 {: .new-title }
 > Annoucement
 >
-> - [2025-03-11] **Do's and Don't**: We have listed the [Do's and Don't](/npc/25sp/first/#dos-and-dont) for the contest. Please check it out.
+> - [2025-03-11] **Do's and Don't**: We have listed the [Do's and Don't](/npc/25sp/first/#dos-and-dont) for the contest.
 > - [2025-03-10] **Detailed Environment**: We have changed the [environment](/npc/env) page to include more details. Please check it out.
 > - [2025-03-08] **Penalty Calculation Updated**: Previously, the penalty was the sum of the first successful submission times for each solved problem. Now, it is the **latest** submission time among all problems where the contestant scored above $$0$$, based on the **earliest occurrence** of their highest-scoring submission.
 > - [2025-03-08] We have listed the [Environment](/npc/env) for the contest. Please check it out.
