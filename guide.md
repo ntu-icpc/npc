@@ -40,6 +40,12 @@ In the competition, you cannot install extensions with AI. We have installed mos
 
 ## Compiling and Running Code from the Terminal
 
+Before you start, you need to `cd` to the directory where your code is located.
+
+```bash
+cd /path/to/your/code
+```
+
 ### C
 
 1. **Compile a C program**:
