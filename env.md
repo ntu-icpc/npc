@@ -9,6 +9,19 @@ nav_order: 100003
 
 The execution of the contest and the submissions are made on [Vjudge](https://vjudge.net/). However, the judging of the submissions is automatically sent to platforms of the source problem. Then, the result is sent back to Vjudge for score evaluation.
 
+### Types of verdict
+
+Each submission is tested against test cases in the judging server. The judging server may give the following verdicts
+
+| Verdict | Possible Feedback  | Description |
+| ------- | -------------- | ----------- |
+| <font color="green">AC</font> | Accepted | Your submission have passed all the test cases. Congratulations |
+| <font color="red">WA</font> | Wrong Answer | Your submission have failed at least one test case|
+| <font color="red">TLE</font> | Time Limit, Time Limit Exceed, Terminated due to timeout | Your submission have exceeded the time limit for at least one test case |
+| <font color="red">MLE</font> | Memory Limit, Memory Limit Exceeded | Your submission have exceeded the memory limit for at least one test case |
+| <font color="red">RE</font>  | Runtime Error, Segmentation Fault, Abort Called | Your submission have crashed when executing at least one test case |
+| <font color="red">CE</font> | Compilation Error | Your submission failed to be compiled |
+
 ## Local Environment
 ### Hardware
 
