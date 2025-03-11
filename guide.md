@@ -102,13 +102,19 @@ cd /path/to/your/code
 
 #### CPython
 
+[CPython](https://www.python.org/) is the default Python interpreter. We recommend you to use CPython as your first choice if you don't have any TLE issues.
+
 ```bash
 python script.py
 ```
 
+However, if you have some TLE issues, you can try [PyPy](#pypy).
+
 ![](./assets/imgs/python_example.png)
 
 #### PyPy
+
+[PyPy](https://www.pypy.org/) is a faster alternative to CPython. You can use PyPy to speed up your code. However, PyPy may have some compatibility issues with some libraries.
 
 ```bash
 pypy3 script.py
