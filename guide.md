@@ -51,12 +51,7 @@ VS Code has an integrated terminal that allows you to execute command-line opera
    ./program_name
    ```
 
-3. **Compile with additional flags**:
-   ```bash
-   gcc -Wall -g -o program_name source_file.c
-   ```
-   - `-Wall`: Enable all warnings
-   - `-g`: Include debugging information
+![](./assets/imgs/gcc_example.png)
 
 #### C++
 
