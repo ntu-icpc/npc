@@ -8,8 +8,6 @@ nav_order: 100002
 
 ## Visual Studio Code
 
-Visual Studio Code (VS Code) is a lightweight but powerful source code editor that runs on your desktop. It comes with built-in support for JavaScript, TypeScript, and Node.js and has a rich ecosystem of extensions for other languages and tools.
-
 ### Installation
 
 - Visit [https://code.visualstudio.com/](https://code.visualstudio.com/)
@@ -33,20 +31,12 @@ VS Code has an integrated terminal that allows you to execute command-line opera
    - Terminal selection: Use the dropdown to switch between terminals
    - Terminal customization: Configure in Settings (`Ctrl+,` or `Cmd+,`)
 
-### Useful VS Code Shortcuts
+### More Information
 
-- `Ctrl+S` / `Cmd+S`: Save file
-- `Ctrl+X` / `Cmd+X`: Cut line
-- `Ctrl+C` / `Cmd+C`: Copy line
-- `Ctrl+V` / `Cmd+V`: Paste
-- `Ctrl+Z` / `Cmd+Z`: Undo
-- `Ctrl+Shift+Z` / `Cmd+Shift+Z`: Redo
-- `Ctrl+F` / `Cmd+F`: Find
-- `Ctrl+H` / `Cmd+H`: Replace
-- `F5`: Start debugging
-- `Shift+F5`: Stop debugging
-- `F11`: Step into
-- `F10`: Step over
+- [VS Code Documentation](https://code.visualstudio.com/docs)
+- [VS Code Extensions](https://code.visualstudio.com/docs/editor/extension-gallery)
+
+In the competition, you cannot install extensions with AI. We have installed most of the necessary extensions for you. If you need more extensions, please ask the organizers to install them for you in the competition.
 
 ## Compiling and Running Code from the Terminal
 
