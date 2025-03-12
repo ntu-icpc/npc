@@ -95,11 +95,11 @@ Yes, we allow non-CCDS students to join the contest. However, since it is our fi
 3. **Are we allowed to bring in any references materials (lecture slides, notes, templates, codebook, etc.)**
 No, you are not allowed to bring in any materials to the contest. However, we allow certain specific materials (details in [here](/../env)). We will place the allowed materials in the lab computer.
 4. **Why I got CE on this code?**  
-```cpp
-#include <string>
+  ```cpp
+  #include <string>
 
-int solve(const std::string &s) {
-  return (s[0] - '0') * (s[2] - '0');
-}
-```
-The template code is just given for your reference. You need to submit the full code. And actually, if you want, you can change the template code to your own style.
+  int solve(const std::string &s) {
+    return (s[0] - '0') * (s[2] - '0');
+  }
+  ```
+  The template code is just given for your reference. You need to submit the full code. And actually, if you want, you can change the template code to your own style.
