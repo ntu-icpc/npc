@@ -37,20 +37,24 @@ int main() {
 
 {% tab Code C++ %}
 ```cpp
-#include <stdio.h>
+#include <iostream>
+#include <string>
 
-/**
- * This function returns Bob's lucky letter.
- *
- * @param s A character array of length 10 representing the letters Bob saw.
- * @return The 7-th letter in the string, which is Bob's lucky letter.
- */
-char solve(char *s) { return s[6]; }
+class Solution {
+ public:
+  /**
+   * This function returns Bob's lucky letter.
+   *
+   * @param s A string of length 10 representing the letters Bob saw.
+   * @return The 7-th letter in the string, which is Bob's lucky letter.
+   */
+  static char solve(const std::string &s) { return s[6]; }
+};
 
 int main() {
-  char s[10];
-  scanf("%s", s);
-  printf("%c\n", solve(s));
+  std::string s;
+  std::cin >> s;
+  std::cout << Solution::solve(s) << std::endl;
   return 0;
 }
 ```

@@ -33,7 +33,7 @@ Then, we can propose a greedy algorithm to solve the decision version problem:
 >
 > Instead of giving a full proof of correctness, we show a reduction that reduces the problem into a classical greedy problem where the correctness of the solution is well-known and proven.
 >
-> For each of the position $x_i$, we create an interval $$[x_i, x_i+ D)$$. Then the problem is reduced to finding the maximum number of non-overlapping intervals (which is known as [Activity Selection Problem](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)).
+> For each of the position $$x_i$$, we create an interval $$[x_i, x_i+ D)$$. Then the problem is reduced to finding the maximum number of non-overlapping intervals (which is known as [Activity Selection Problem](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)).
 >
 > The proof of correctness of the problem can be found at Section 15.1 of the book {% cite cormen2022introduction %}.
 
