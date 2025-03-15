@@ -6,6 +6,24 @@ parent: Solutions
 
 # H - Bye Bye
 
+## Solution
+
+Let's consider the people living in $$ x_1 $$ and $$ x_n $$, that is, the residents of the leftmost and rightmost apartments.
+
+WLOG, we assume $$ p_1 \ge p_n $$. Let's think about what the person living in $$ x_n $$ is considering.
+
+First, they will realize that they will be the last one to be dropped off no matter what. Even if there are a large number of people at $$ x_{n-1} $$, causing the vehicle to keep moving right, once the vehicle reaches $$ x_{n-1} $$, all the residents from $$ x_1 $$ to $$ x_{n-2} $$ will unanimously vote to go left. This is because by doing so, the bus will continue moving left, and except for the person at $$ x_n $$, it will head straight in the direction that everyone else desires.
+
+At this point, the clever NTU students will realize that the residents of $$ x_n $$ unanimously hope that the residents of $$ x_1 $$ get home as soon as possible. This is because once the residents of $$ x_1 $$ have reached home, the bus will only move to the right -- no one would choose to go left and send the bus into an uninhabited area.
+
+In other words, they have accepted their fate of being the last to arrive. However, once the bus reaches $$ x_1 $$, they only need to wait for a duration of $$ x_n - x_1 $$ to get home. Since their fate is fixed once the bus reaches $$ x_1 $$, all they need to do is strive to reach $$ x_1 $$ as quickly as possible.
+
+So, can we think that the residents of $$ x_n $$ first let themselves "temporarily stay" at $$ x_1 $$, and then we recursively solve the subproblem? Once the subproblem is solved, we can then direct the bus toward $$ x_n $$.
+
+In other words, the original problem is $$ \left<(x_1, \dots, x_n), (p_1, \dots, p_n)\right> $$. Now, it becomes $$ \left<(x_1, \dots, x_{n-1}), (p_1 + p_n, p_2, \dots, p_{n-1})\right> $$. After solving this subproblem, we add the time to reach $$ x_n $$ to the final answer, which will give the solution to the original problem.
+
+Similarly, if $$ p_1 < p_n $$, then the residents of $$ x_1 $$ will do everything they can to make the bus reach $$ x_n $$ quickly.
+
 ## Codes
 
 {% tabs Code %}
