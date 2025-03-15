@@ -1,3 +1,44 @@
+/* CSS Reset for tabs - with !important to override theme styles */
+ul.tab,
+ul.tab li,
+ul.tab-content,
+ul.tab-content li {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    list-style-type: none !important;
+    -webkit-margin-before: 0 !important;
+    -webkit-margin-after: 0 !important;
+    -webkit-margin-start: 0 !important;
+    -webkit-margin-end: 0 !important;
+    -webkit-padding-start: 0 !important;
+}
+
+/* Target Just the Docs theme specific styling */
+.main-content ul.tab,
+.main-content ul.tab li,
+.main-content ul.tab-content,
+.main-content ul.tab-content li {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+    list-style: none !important;
+    list-style-type: none !important;
+}
+
+ul.tab::before,
+ul.tab li::before,
+ul.tab-content::before,
+ul.tab-content li::before,
+.main-content ul.tab::before,
+.main-content ul.tab li::before,
+.main-content ul.tab-content::before,
+.main-content ul.tab-content li::before {
+    content: none !important;
+    display: none !important;
+}
+
 .tab {
     display: flex;
     flex-wrap: wrap;
