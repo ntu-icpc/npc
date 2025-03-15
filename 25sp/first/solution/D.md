@@ -1,7 +1,7 @@
 ---
 title: D - Multiset
 layout: page
-parent: Solution
+parent: Solutions
 ---
 
 # D - Multiset

@@ -1,7 +1,7 @@
 ---
 title: B - Distance
 layout: page
-parent: Solution
+parent: Solutions
 ---
 
 # B - Distance
