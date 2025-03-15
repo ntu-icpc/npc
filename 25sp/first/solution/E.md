@@ -8,8 +8,8 @@ parent: Solutions
 
 ## Codes
 
-### C
-
+{% tabs Code %}
+{% tab Code C %}
 ```c
 #include <stdbool.h>
 #include <stdio.h>
@@ -73,9 +73,9 @@ int main() {
   return 0;
 }
 ```
+{% endtab %}
 
-### C++
-
+{% tab Code C++ %}
 ```cpp
 #include <algorithm>
 #include <iostream>
@@ -120,9 +120,9 @@ int main() {
   return 0;
 }
 ```
+{% endtab %}
 
-### Java
-
+{% tab Code Java %}
 ```java
 import java.util.Arrays;
 import java.util.Scanner;
@@ -184,9 +184,9 @@ public class Solution {
   }
 }
 ```
+{% endtab %}
 
-### Python
-
+{% tab Code Python %}
 ```python
 class Solution:
     @staticmethod
@@ -234,3 +234,5 @@ if __name__ == "__main__":
     t, a, b = map(int, input().split())
     print(Solution.solve(t, a, b))
 ```
+{% endtab %}
+{% endtabs %}

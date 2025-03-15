@@ -8,8 +8,8 @@ parent: Solutions
 
 ## Codes
 
-### C
-
+{% tabs Code %}
+{% tab Code C %}
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -46,9 +46,9 @@ int main() {
   return 0;
 }
 ```
+{% endtab %}
 
-### C++
-
+{% tab Code C++ %}
 ```cpp
 #include <algorithm>
 #include <climits>
@@ -87,9 +87,9 @@ int main() {
   return 0;
 }
 ```
+{% endtab %}
 
-### Java
-
+{% tab Code Java %}
 ```java
 import java.io.*;
 import java.lang.*;
@@ -128,9 +128,9 @@ class Main {
   }
 }
 ```
+{% endtab %}
 
-### Python
-
+{% tab Code Python %}
 ```python
 class Solution:
     @staticmethod
@@ -155,3 +155,5 @@ if __name__ == "__main__":
     a = [int(input()) for _ in range(n)]
     print(Solution.solve(n, k, a))
 ```
+{% endtab %}
+{% endtabs %}
