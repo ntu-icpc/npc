@@ -14,28 +14,73 @@ Just `print(s[6])` because the string stored in most language are in 0-indexed.
 
 ## Codes
 
+<style>
+  .code-tabs {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .code-tabs .tab-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .code-tabs .tab-buttons button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #888;
+  }
+  .code-tabs .tab-buttons button.active {
+    color: orange;
+    border-bottom: 2px solid orange;
+  }
+  .code-tabs .tab-content {
+    display: none;
+  }
+  .code-tabs .tab-content.active {
+    display: block;
+  }
+</style>
+
 <div class="code-tabs">
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" data-bs-toggle="tab" href="#python">Python</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="tab" href="#java">Java</a>
-    </li>
-  </ul>
-  <div class="tab-content">
-    <div class="tab-pane fade show active" id="python">
-      ```python
-      print("Hello, World!")
-      ```
-    </div>
-    <div class="tab-pane fade" id="java">
-      ```java
-      System.out.println("Hello, World!");
-      ```
-    </div>
+  <div class="tab-buttons">
+    <button class="active" onclick="switchTab('tab-python', this)">Python</button>
+    <button onclick="switchTab('tab-typescript', this)">TypeScript</button>
+    <button onclick="switchTab('tab-curl', this)">cURL</button>
+  </div>
+  <div id="tab-python" class="tab-content active">
+    ```python
+    print("Hello, World!")
+    ```
+  </div>
+  <div id="tab-typescript" class="tab-content">
+    ```typescript
+    console.log("Hello, World!");
+    ```
+  </div>
+  <div id="tab-curl" class="tab-content">
+    ```sh
+    curl https://example.com
+    ```
   </div>
 </div>
+
+<script>
+  function switchTab(tabId, button) {
+    document.querySelectorAll(".code-tabs .tab-content").forEach(tab => {
+      tab.classList.remove("active");
+    });
+    document.querySelector("#" + tabId).classList.add("active");
+
+    document.querySelectorAll(".code-tabs .tab-buttons button").forEach(btn => {
+      btn.classList.remove("active");
+    });
+    button.classList.add("active");
+  }
+</script>
 
 <details markdown="block">
 <summary>C</summary>
