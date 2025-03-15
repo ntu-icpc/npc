@@ -1,2 +1,4 @@
 {% assign math = page.math | default: layout.math | default: site.math %} {%
 case math %} {% when "mathjax" %} {% include mathjax.html %} {% endcase %}
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tabs.css">
