@@ -14,7 +14,7 @@ Nanyang Programming Contest 2025: The 1st Contest
 
 {: .new-title }
 > Annoucement
-> - [2025-03-15] **Solution**: We have uploaded the [solution](/npc/25sp/first/solution/editorial.pdf) for the contest.
+> - [2025-03-15] **Solution**: We have uploaded the [solution](/npc/25sp/first/solution/Editorial.pdf) for the contest.
 > - [2025-03-12] **Types of verdict**: We have added the [Types of verdict](/npc/env#types-of-verdict) in the [Environment](/npc/env) page.
 > - [2025-03-11] **Do's and Don't**: We have listed the [Do's and Don't](#dos-and-dont) for the contest.
 > - [2025-03-10] **Detailed Environment**: We have changed the [environment](/npc/env) page to include more details. Please check it out.
