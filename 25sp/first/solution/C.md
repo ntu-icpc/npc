@@ -1,7 +1,7 @@
 ---
 title: C - Graph
 layout: page
-parent: NPC25 The 1st Contest Solution
+parent: Solution
 ---
 
 # C - Graph
