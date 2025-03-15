@@ -12,30 +12,7 @@ Just `print(s[6])` because the string stored in most language are in 0-indexed.
 
 ## Codes
 
-{% tabs log %}
-
-{% tab log php %}
-```php
-var_dump('hello');
-```
-{% endtab %}
-
-{% tab log js %}
-```javascript
-console.log('hello');
-```
-{% endtab %}
-
-{% tab log ruby %}
-```javascript
-pputs 'hello'
-```
-{% endtab %}
-
-{% endtabs %}
-
-
-<!-- {% tabs Code %}
+{% tabs Code %}
 
 {% tab Code C %}
 ```c
@@ -124,4 +101,4 @@ if __name__ == "__main__":
 ```
 {% endtab %}
 
-{% endtabs %} -->
+{% endtabs %}
