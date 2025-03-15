@@ -19,6 +19,8 @@ Let's check when to output $$-1$$ first.
 > ($$\leftarrow$$) The operation $$-1$$ at some index $$i$$ and $${+1}$$ at some index $$j$$. This means that the sum of elements in the multiset remains unchanged. Therefore, it is impossible to make $$X = Y$$ if their sum is different.
 >
 > ($$\rightarrow$$) This proposition means that it is always possible to make them equal if the sum of elements is the same. One can just make all elements in $$X$$ except the first one to be zero. By this, you can just always $$-1$$ from the first index and $${+1}$$ to the index $$j$$ (for all $$j$$) $${y_j}$$ times.
+>
+> ![](imgs/D/possible.png)
 
 ## Codes
 
