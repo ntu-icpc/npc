@@ -8,8 +8,6 @@ parent: Solutions
 
 ## Solution
 
-**Abridged Statement**: Print the 7-th character.
-
 Just `print(s[6])` because the string stored in most language are in 0-indexed.
 
 ## Codes

@@ -8,7 +8,7 @@ parent: Solutions
 
 ## Solution
 
-**Abridged Statement**: Given a list of positions, find the maximum minimum distance between any two positions.
+We can use binary search to reduce the question to a decision problem:
 
 {: .note-title }
 > Abridged Statement (Optimization Problem)
