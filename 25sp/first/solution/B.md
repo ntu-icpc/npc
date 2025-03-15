@@ -278,9 +278,4 @@ if __name__ == "__main__":
 
 ## References
 
-@book{cormen2022introduction,
-  title={Introduction to algorithms},
-  author={Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford},
-  year={2022},
-  publisher={MIT press}
-}
+{% bibliography %}
