@@ -35,7 +35,7 @@ Then, we can propose a greedy algorithm to solve the decision version problem:
 >
 > For each of the position $x_i$, we create an interval $$[x_i, x_i+ D)$$. Then the problem is reduced to finding the maximum number of non-overlapping intervals (which is known as [Activity Selection Problem](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)).
 >
-> The proof of correctness of the problem can be found at Section 15.1 in the book [Introduction to Algorithms](https://dl.ebooksworld.ir/books/Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf).
+> The proof of correctness of the problem can be found at Section 15.1 of the book {% cite cormen2022introduction %}.
 
 ## Codes
 
@@ -278,4 +278,4 @@ if __name__ == "__main__":
 
 ## References
 
-{% bibliography %}
+{% bibliography --cited %}
