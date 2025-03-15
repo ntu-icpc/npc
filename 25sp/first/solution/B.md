@@ -1,7 +1,7 @@
 ---
 title: B - Distance
 layout: page
-parent: NPC25 The 1st Contest
+parent: NPC25 The 1st Contest Solution
 ---
 
 # B - Distance

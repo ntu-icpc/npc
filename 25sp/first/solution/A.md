@@ -1,7 +1,7 @@
 ---
 title: A - Lucky Seven
 layout: page
-parent: NPC25 The 1st Contest
+parent: NPC25 The 1st Contest Solution
 ---
 
 # A - Lucky Seven
