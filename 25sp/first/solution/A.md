@@ -51,56 +51,26 @@ curl https://example.com
   </div>
 </div>
 
-<style>
-  .code-tabs {
-    background: #1e1e1e;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 1em;
-  }
-  .tab-buttons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  .tab-button {
-    background: none;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #888;
-  }
-  .tab-button.active {
-    color: orange;
-    border-bottom: 2px solid orange;
-  }
-  .tab-content {
-    display: none;
-  }
-  .tab-content.active {
-    display: block;
-  }
-</style>
-
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-button');
     
     tabButtons.forEach(button => {
       button.addEventListener('click', function() {
-        // Remove active class from all buttons and content
-        document.querySelectorAll('.tab-button').forEach(btn => {
-          btn.classList.remove('active');
-        });
+        const tab = this.getAttribute('data-tab');
+        
+        // Deactivate all tabs
         document.querySelectorAll('.tab-content').forEach(content => {
           content.classList.remove('active');
         });
         
-        // Add active class to clicked button and corresponding content
+        document.querySelectorAll('.tab-button').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        
+        // Activate the selected tab
+        document.getElementById('tab-' + tab).classList.add('active');
         this.classList.add('active');
-        const tabId = 'tab-' + this.getAttribute('data-tab');
-        document.getElementById(tabId).classList.add('active');
       });
     });
   });
