@@ -20,6 +20,13 @@ We can use binary search to reduce the question to a decision problem:
 > 
 > Given a distance $$D$$, is it possible to select $$k$$ positions, such that the distance between any two positions is at least $$D$$ (i.e. the distance between neighbouring positions is at least $$D$$).
 
+Then, we can propose a greedy algorithm to solve the decision version problem:
+
+1. Sort the positions, set the current latest position as negative infinity ($$-\infty$$)
+2. Enumerate the array, if the current position is at least current latest position $$+ D$$, then select the current position and set it to the current latest position.
+3. If there is at least $$k$$ position chosen, then the answer is `YES`.
+
+
 ## Codes
 
 <details markdown="block">
