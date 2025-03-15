@@ -28,4 +28,5 @@ callouts:
     color: red
 
 plugins:
+  - jekyll-default-layout
   - jekyll-scholar
