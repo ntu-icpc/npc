@@ -20,12 +20,12 @@ The graph below illustrates an example.
 
 ```mermaid
 graph BT;
-  B((B)) --|+1| A((A));
-  C((C)) --|+1| A((A));
-  D((D)) --|+1| A((A));
-  E((E)) --|+1| B((B));
-  F((F)) --|+1| B((B));
-  G((G)) --|+1| D((D));
+  B((B)) -->|+1| A((A));
+  C((C)) -->|+1| A((A));
+  D((D)) -->|+1| A((A));
+  E((E)) -->|+1| B((B));
+  F((F)) -->|+1| B((B));
+  G((G)) -->|+1| D((D));
 ```
 
 ## Codes
