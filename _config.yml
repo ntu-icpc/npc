@@ -29,3 +29,4 @@ callouts:
 
 plugins:
   - jekyll-scholar
+  - jekyll-tabs

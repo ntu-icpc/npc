@@ -12,8 +12,32 @@ Just `print(s[6])` because the string stored in most language are in 0-indexed.
 
 ## Codes
 
-<details markdown="block">
-<summary>C</summary>
+{% tabs log %}
+
+{% tab log php %}
+```php
+var_dump('hello');
+```
+{% endtab %}
+
+{% tab log js %}
+```javascript
+console.log('hello');
+```
+{% endtab %}
+
+{% tab log ruby %}
+```javascript
+pputs 'hello'
+```
+{% endtab %}
+
+{% endtabs %}
+
+
+<!-- {% tabs Code %}
+
+{% tab Code C %}
 ```c
 #include <stdio.h>
 
@@ -32,10 +56,9 @@ int main() {
   return 0;
 }
 ```
-</details>
+{% endtab %}
 
-<details markdown="block">
-<summary>C++</summary>
+{% tab Code C++ %}
 ```cpp
 #include <stdio.h>
 
@@ -54,10 +77,9 @@ int main() {
   return 0;
 }
 ```
-</details>
+{% endtab %}
 
-<details markdown="block">
-<summary>Java</summary>
+{% tab Code Java %}
 ```java
 import java.util.Scanner;
 
@@ -77,10 +99,9 @@ class Solution {
   }
 }
 ```
-</details>
+{% endtab %}
 
-<details markdown="block">
-<summary>Python</summary>
+{% tab Code Python %}
 ```python
 class Solution:
     @staticmethod
@@ -101,4 +122,6 @@ if __name__ == "__main__":
     s = input()
     print(Solution.solve(s))
 ```
-</details>
+{% endtab %}
+
+{% endtabs %} -->
