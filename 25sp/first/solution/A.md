@@ -14,18 +14,56 @@ Just `print(s[6])` because the string stored in most language are in 0-indexed.
 
 ## Codes
 
+{% raw %}
+<div class="code-tabs">
+  <div class="tab-buttons">
+    <button class="tab-button active" data-tab="python">Python</button>
+    <button class="tab-button" data-tab="typescript">TypeScript</button>
+    <button class="tab-button" data-tab="curl">cURL</button>
+  </div>
+  
+  <div id="tab-python" class="tab-content active">
+{% endraw %}
+
+```python
+print("Hello, World!")
+```
+
+{% raw %}
+  </div>
+  <div id="tab-typescript" class="tab-content">
+{% endraw %}
+
+```typescript
+console.log("Hello, World!");
+```
+
+{% raw %}
+  </div>
+  <div id="tab-curl" class="tab-content">
+{% endraw %}
+
+```sh
+curl https://example.com
+```
+
+{% raw %}
+  </div>
+</div>
+
 <style>
   .code-tabs {
     background: #1e1e1e;
     padding: 10px;
     border-radius: 8px;
+    margin-bottom: 1em;
   }
-  .code-tabs .tab-buttons {
+  .tab-buttons {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
   }
-  .code-tabs .tab-buttons button {
+  .tab-button {
     background: none;
     border: none;
     padding: 8px 12px;
@@ -33,54 +71,41 @@ Just `print(s[6])` because the string stored in most language are in 0-indexed.
     font-weight: bold;
     color: #888;
   }
-  .code-tabs .tab-buttons button.active {
+  .tab-button.active {
     color: orange;
     border-bottom: 2px solid orange;
   }
-  .code-tabs .tab-content {
+  .tab-content {
     display: none;
   }
-  .code-tabs .tab-content.active {
+  .tab-content.active {
     display: block;
   }
 </style>
 
-<div class="code-tabs">
-  <div class="tab-buttons">
-    <button class="active" onclick="switchTab('tab-python', this)">Python</button>
-    <button onclick="switchTab('tab-typescript', this)">TypeScript</button>
-    <button onclick="switchTab('tab-curl', this)">cURL</button>
-  </div>
-  <div id="tab-python" class="tab-content active">
-    ```python
-    print("Hello, World!")
-    ```
-  </div>
-  <div id="tab-typescript" class="tab-content">
-    ```typescript
-    console.log("Hello, World!");
-    ```
-  </div>
-  <div id="tab-curl" class="tab-content">
-    ```sh
-    curl https://example.com
-    ```
-  </div>
-</div>
-
 <script>
-  function switchTab(tabId, button) {
-    document.querySelectorAll(".code-tabs .tab-content").forEach(tab => {
-      tab.classList.remove("active");
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    
+    tabButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons and content
+        document.querySelectorAll('.tab-button').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        document.querySelectorAll('.tab-content').forEach(content => {
+          content.classList.remove('active');
+        });
+        
+        // Add active class to clicked button and corresponding content
+        this.classList.add('active');
+        const tabId = 'tab-' + this.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+      });
     });
-    document.querySelector("#" + tabId).classList.add("active");
-
-    document.querySelectorAll(".code-tabs .tab-buttons button").forEach(btn => {
-      btn.classList.remove("active");
-    });
-    button.classList.add("active");
-  }
+  });
 </script>
+{% endraw %}
 
 <details markdown="block">
 <summary>C</summary>
