@@ -8,6 +8,6 @@ parent: NPC25 The 1st Contest
 
 [Contest Link for upsolving](https://vjudge.net/contest/699239) (Please check email for the password)
 
-[Problem Statement](/npc/25sp/first/solution/statement.pdf)
+[Problem Statement](/npc/25sp/first/solution/Statement.pdf)
 
-[Solution](/npc/25sp/first/solution/editorial.pdf)
+[Solution](/npc/25sp/first/solution/Editorial.pdf)
