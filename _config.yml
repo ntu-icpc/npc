@@ -30,3 +30,8 @@ callouts:
 plugins:
   - jekyll-scholar
   - jekyll-tabs
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "11.5.0"

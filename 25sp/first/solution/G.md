@@ -6,6 +6,28 @@ parent: Solutions
 
 # G - Tree
 
+## Solution
+
+To solve this problem, you need to understand what is a rooted tree. When a tree is rooted, each node (except the root) will have exactly $$1$$ parent node (i.e., the node connected to it that is closer to the root) and a number of children nodes.
+
+Therefore, the number of children is the number of edge connected to it $$- 1$$ (except for root).
+
+Alternatively, you can enumerate the parent from $$2$$ to $$n$$. The number of time a number appears as parent is the number of children.
+
+Then, you just need to have two arrays one act as a lookup table of how many children that node have and another act as another lookup table of how many node with that amount of children.
+
+The graph below illustrates an example.
+
+```mermaid
+graph BT;
+  B((B)) --|+1| A((A));
+  C((C)) --|+1| A((A));
+  D((D)) --|+1| A((A));
+  E((E)) --|+1| B((B));
+  F((F)) --|+1| B((B));
+  G((G)) --|+1| D((D));
+```
+
 ## Codes
 
 {% tabs Code %}
