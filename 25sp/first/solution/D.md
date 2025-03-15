@@ -22,6 +22,28 @@ Let's check when to output $$-1$$ first.
 >
 > ![](imgs/D/possible.png)
 
+To find the minimum operations required, we can adopt a greedy strategy:
+
+1. Sort both array in ascending order
+2. The answer is
+$$
+\frac{1}{2}\sum_{i=1}^{n}{|x_i - y_i|}
+$$
+
+{: .note-title}
+> Proof
+>
+> From the previous observation, we know that it is possible only if the sum of elements of $$X$$ and $$Y$$ are the same.
+>
+> Therefore, we can separate the operation $$-1$$ and $$+1$$ independently. That is, one operation is $$-1$$ to some index $$j$$ with cost $$\frac{1}{2}$$ and another operation is $$+1$$ to some index $$j$$ with cost $$\frac{1}{2}$$.
+>
+> The problem is reduced to finding a **one-to-one mapping** between set $$X$$ and set $$Y$$.
+>
+> - If $$x_i$$ is mapped with $$y_j$$, the cost is $$\frac{1}{2} \cdot |y_j - x_i|$$.
+> - The cost of the mapping is $$\frac{1}{2} \cdot \sum_{\text{all mappings}}{|y_j - x_i|}$$.
+>
+> The optimal strategy is to choose the smallest $$x$$ with the smallest $$y$$. You may refer to some similar problems in Geekforgeek (Assign mice to holes). The proof is by case discussion. Please see {% cite li_2016 %}.
+
 ## Codes
 
 {% tabs Code %}
