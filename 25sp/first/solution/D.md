@@ -281,3 +281,7 @@ if __name__ == "__main__":
 ```
 {% endtab %}
 {% endtabs %}
+
+## References
+
+{% bibliography --cited %}
