@@ -8,8 +8,9 @@ parent: Solutions
 
 ## Codes
 
-### C
+{% tabs Code %}
 
+{% tab Code C %}
 ```c
 #include <memory.h>
 #include <stdbool.h>
@@ -424,9 +425,9 @@ int main() {
   return 0;
 }
 ```
+{% endtab %}
 
-### C++
-
+{% tab Code C++ %}
 ```cpp
 #include <algorithm>
 #include <iostream>
@@ -518,9 +519,9 @@ int main() {
   return 0;
 }
 ```
+{% endtab %}
 
-### Java
-
+{% tab Code Java %}
 ```java
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -710,9 +711,9 @@ class Main {
   }
 }
 ```
+{% endtab %}
 
-### Python
-
+{% tab Code Python %}
 ```python
 from dataclasses import dataclass, field
 
@@ -943,3 +944,6 @@ if __name__ == "__main__":
     print(len(result))
     print(*sorted(result))
 ```
+{% endtab %}
+
+{% endtabs %}
