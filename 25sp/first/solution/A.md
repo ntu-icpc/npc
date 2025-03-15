@@ -15,6 +15,7 @@ Just `print(s[6])` because the string stored in most language are in 0-indexed.
 ## Codes
 
 <details markdown="block">
+<summary>C</summary>
 ```c
 #include <stdio.h>
 
