@@ -8,8 +8,8 @@ parent: Solutions
 
 ## Codes
 
-### C
-
+{% tabs Code %}
+{% tab Code C %}
 ```c
 #include <inttypes.h>
 #include <stdint.h>
@@ -82,10 +82,9 @@ int main() {
   return 0;
 }
 ```
+{% endtab %}
 
-
-### C++
-
+{% tab Code C++ %}
 ```cpp
 #include <algorithm>
 #include <cstdint>
@@ -137,9 +136,9 @@ int main() {
   return 0;
 }
 ```
+{% endtab %}
 
-### Java
-
+{% tab Code Java %}
 ```java
 import java.util.Arrays;
 import java.util.Scanner;
@@ -200,8 +199,9 @@ class Solution {
   }
 }
 ```
-### Python
+{% endtab %}
 
+{% tab Code Python %}
 ```python
 from typing import List
 
@@ -239,3 +239,5 @@ if __name__ == "__main__":
 
     print(Solution.solve(n, X, Y))
 ```
+{% endtab %}
+{% endtabs %}
