@@ -26,6 +26,16 @@ Then, we can propose a greedy algorithm to solve the decision version problem:
 2. Enumerate the array, if the current position is at least current latest position $$+ D$$, then select the current position and set it to the current latest position.
 3. If there is at least $$k$$ position chosen, then the answer is `YES`.
 
+{: .note-title }
+> Proof of Correctness
+> 
+> The greedy algorithm is essentially implying given $$D$$, if the maximum number of positions you can choose with the aforementioned constraint \textbf{is greater than or equal to} $$k$$, then the answer is `YES`.
+>
+> Instead of giving a full proof of correctness, we show a reduction that reduces the problem into a classical greedy problem where the correctness of the solution is well-known and proven.
+>
+> For each of the position $x_i$, we create an interval $$[x_i, x_i+ D)$$. Then the problem is reduced to finding the maximum number of non-overlapping intervals (which is known as [Activity Selection Problem](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)).
+>
+> The proof of correctness of the problem can be found at Section 15.1 in the book [Introduction to Algorithms](https://dl.ebooksworld.ir/books/Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf).
 
 ## Codes
 
@@ -265,3 +275,12 @@ if __name__ == "__main__":
     print(Solution.solve(n, k, x))
 ```
 </details>
+
+## References
+
+@book{cormen2022introduction,
+  title={Introduction to algorithms},
+  author={Cormen, Thomas H and Leiserson, Charles E and Rivest, Ronald L and Stein, Clifford},
+  year={2022},
+  publisher={MIT press}
+}
