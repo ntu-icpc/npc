@@ -29,7 +29,7 @@ Then, we can propose a greedy algorithm to solve the decision version problem:
 {: .note-title }
 > Proof of Correctness
 > 
-> The greedy algorithm is essentially implying given $$D$$, if the maximum number of positions you can choose with the aforementioned constraint \textbf{is greater than or equal to} $$k$$, then the answer is `YES`.
+> The greedy algorithm is essentially implying given $$D$$, if the maximum number of positions you can choose with the aforementioned constraint **is greater than or equal to** $$k$$, then the answer is `YES`.
 >
 > Instead of giving a full proof of correctness, we show a reduction that reduces the problem into a classical greedy problem where the correctness of the solution is well-known and proven.
 >
