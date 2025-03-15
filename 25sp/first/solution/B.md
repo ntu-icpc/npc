@@ -36,11 +36,18 @@ Then, we can propose a greedy algorithm to solve the decision version problem:
 > For each of the position $$x_i$$, we create an interval $$[x_i, x_i+ D)$$. Then the problem is reduced to finding the maximum number of non-overlapping intervals (which is known as [Activity Selection Problem](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)).
 >
 > The proof of correctness of the problem can be found at Section 15.1 of the book {% cite cormen2022introduction %}.
+>
+> The optimal strategy for the Activity Selection problem is to sort the interval by end time and apply the same algorithm as our greedy algorithm.
+>
+> Since in this specially constructed input, the duration of all intervals are the same, therefore, the order of intervals sort by end time is same as the order sort by start time (which is the position).
+>
+> Therefore, the reduction is correct and thus, our greedy algorithm is correct.
 
 ## Codes
 
-<details markdown="block">
-<summary>C</summary>
+{% tabs Code %}
+
+{% tab Code C %}
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -114,10 +121,9 @@ int main() {
   return 0;
 }
 ```
-</details>
+{% endtab %}
 
-<details markdown="block">
-<summary>C++</summary>
+{% tab Code C++ %}
 ```cpp
 #include <algorithm>
 #include <iostream>
@@ -169,10 +175,9 @@ int main() {
   return 0;
 }
 ```
-</details>
+{% endtab %}
 
-<details markdown="block">
-<summary>Java</summary>
+{% tab Code Java %}
 ```java
 import java.io.*;
 import java.lang.*;
@@ -221,10 +226,9 @@ class Solution {
   }
 }
 ```
-</details>
+{% endtab %}
 
-<details markdown="block">
-<summary>Python</summary>
+{% tab Code Python %}
 ```python
 from typing import List
 
@@ -274,7 +278,7 @@ if __name__ == "__main__":
     x = list(map(int, input().split()))
     print(Solution.solve(n, k, x))
 ```
-</details>
+{% endtab %}
 
 ## References
 
