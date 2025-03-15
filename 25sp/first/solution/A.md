@@ -14,6 +14,29 @@ Just `print(s[6])` because the string stored in most language are in 0-indexed.
 
 ## Codes
 
+<div class="code-tabs">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#python">Python</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#java">Java</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="python">
+      ```python
+      print("Hello, World!")
+      ```
+    </div>
+    <div class="tab-pane fade" id="java">
+      ```java
+      System.out.println("Hello, World!");
+      ```
+    </div>
+  </div>
+</div>
+
 <details markdown="block">
 <summary>C</summary>
 ```c
