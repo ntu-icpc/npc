@@ -6,6 +6,8 @@ parent: Solutions
 
 # D - Multiset
 
+## Analysis
+
 Let's check when to output $$-1$$ first.
 
 {: .note-title}

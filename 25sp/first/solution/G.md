@@ -6,7 +6,7 @@ parent: Solutions
 
 # G - Tree
 
-## Solution
+## Analysis
 
 To solve this problem, you need to understand what is a rooted tree. When a tree is rooted, each node (except the root) will have exactly $$1$$ parent node (i.e., the node connected to it that is closer to the root) and a number of children nodes.
 

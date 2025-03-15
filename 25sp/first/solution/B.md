@@ -6,7 +6,7 @@ parent: Solutions
 
 # B - Distance
 
-## Solution
+## Analysis
 
 We can use binary search to reduce the question to a decision problem:
 

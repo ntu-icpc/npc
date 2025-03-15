@@ -6,7 +6,7 @@ parent: Solutions
 
 # F - Subsequence
 
-## Solution
+## Analysis
 
 {: .note-title}
 > Observation

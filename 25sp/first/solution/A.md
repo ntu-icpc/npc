@@ -6,7 +6,7 @@ parent: Solutions
 
 # A - Lucky Seven
 
-## Solution
+## Analysis
 
 Just `print(s[6])` because the string stored in most language are in 0-indexed.
 

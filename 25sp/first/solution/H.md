@@ -6,7 +6,7 @@ parent: Solutions
 
 # H - Bye Bye
 
-## Solution
+## Analysis
 
 Let's consider the people living in $$ x_1 $$ and $$ x_n $$, that is, the residents of the leftmost and rightmost apartments.
 
