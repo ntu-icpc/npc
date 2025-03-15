@@ -14,69 +14,6 @@ Just `print(s[6])` because the string stored in most language are in 0-indexed.
 
 ## Codes
 
-{% raw %}
-<div class="code-tabs">
-  <div class="tab-buttons">
-    <button class="tab-button active" data-tab="python">Python</button>
-    <button class="tab-button" data-tab="typescript">TypeScript</button>
-    <button class="tab-button" data-tab="curl">cURL</button>
-  </div>
-  
-  <div id="tab-python" class="tab-content active">
-{% endraw %}
-
-```python
-print("Hello, World!")
-```
-
-{% raw %}
-  </div>
-  <div id="tab-typescript" class="tab-content">
-{% endraw %}
-
-```typescript
-console.log("Hello, World!");
-```
-
-{% raw %}
-  </div>
-  <div id="tab-curl" class="tab-content">
-{% endraw %}
-
-```sh
-curl https://example.com
-```
-
-{% raw %}
-  </div>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    
-    tabButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const tab = this.getAttribute('data-tab');
-        
-        // Deactivate all tabs
-        document.querySelectorAll('.tab-content').forEach(content => {
-          content.classList.remove('active');
-        });
-        
-        document.querySelectorAll('.tab-button').forEach(btn => {
-          btn.classList.remove('active');
-        });
-        
-        // Activate the selected tab
-        document.getElementById('tab-' + tab).classList.add('active');
-        this.classList.add('active');
-      });
-    });
-  });
-</script>
-{% endraw %}
-
 <details markdown="block">
 <summary>C</summary>
 ```c
@@ -97,9 +34,10 @@ int main() {
   return 0;
 }
 ```
+</details>
 
-### C++
-
+<details markdown="block">
+<summary>C++</summary>
 ```cpp
 #include <stdio.h>
 
@@ -120,8 +58,8 @@ int main() {
 ```
 </details>
 
-### Java
-
+<details markdown="block">
+<summary>Java</summary>
 ```java
 import java.util.Scanner;
 
@@ -141,9 +79,10 @@ class Solution {
   }
 }
 ```
+</details>
 
-### Python
-
+<details markdown="block">
+<summary>Python</summary>
 ```python
 class Solution:
     @staticmethod
@@ -164,3 +103,4 @@ if __name__ == "__main__":
     s = input()
     print(Solution.solve(s))
 ```
+</details>
