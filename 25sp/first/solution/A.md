@@ -6,10 +6,15 @@ parent: Solution
 
 # A - Lucky Seven
 
+## Solution
+
+**Abridged Statement**: Print the 7-th character.
+
+Just `print(s[6])` because the string stored in most language are in 0-indexed.
+
 ## Codes
 
-### C
-
+<details markdown="block">
 ```c
 #include <stdio.h>
 
@@ -49,6 +54,7 @@ int main() {
   return 0;
 }
 ```
+</details>
 
 ### Java
 
