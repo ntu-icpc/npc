@@ -6,6 +6,20 @@ parent: Solution
 
 # B - Distance
 
+## Solution
+
+**Abridged Statement**: Given a list of positions, find the maximum minimum distance between any two positions.
+
+{: .note-title }
+> Abridged Statement (Optimization Problem)
+> 
+> Choose $$k$$ positions such that the minimum distance between any of the two $$k$$ positions are maximized.
+
+{: .note-title }
+> Decision Version
+> 
+> Given a distance $$D$$, is it possible to select $$k$$ positions, such that the distance between any two positions is at least $$D$$ (i.e. the distance between neighbouring positions is at least $$D$$).
+
 ## Codes
 
 <details markdown="block">
