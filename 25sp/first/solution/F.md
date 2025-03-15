@@ -6,6 +6,21 @@ parent: Solutions
 
 # F - Subsequence
 
+## Solution
+
+{: .note-title}
+> Observation
+>
+> It is always optimal to choose elements that are neighbouring to each other in the sorted array.
+>
+> Explain: Suppose if the it is not the case, there exists an optimal solution where the elements is not contiguous, you can always replace the elements within the gap and make them neighbouring, and this solution is at most the optimal. And since it is optimal, this way is still optimal.
+
+So the algorithm is:
+
+1. Sort the array.
+2. Maintain a window of size $$k$$. Suppose if the start of the window is placed at position $$i$$, and end of the window is placed at position $$i + k - 1$$. The answer is just $$a_{i + k - 1} - a_i$$.
+3. With this, you can slide the window from position $$0$$ to position $$n - k$$ and get the minimum difference.
+
 ## Codes
 
 {% tabs Code %}
