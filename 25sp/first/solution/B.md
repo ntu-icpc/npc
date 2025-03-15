@@ -8,8 +8,8 @@ parent: Solution
 
 ## Codes
 
-### C
-
+<details markdown="block">
+<summary>C</summary>
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -83,9 +83,10 @@ int main() {
   return 0;
 }
 ```
+</details>
 
-### C++
-
+<details markdown="block">
+<summary>C++</summary>
 ```cpp
 #include <algorithm>
 #include <iostream>
@@ -137,9 +138,10 @@ int main() {
   return 0;
 }
 ```
+</details>
 
-### Java
-
+<details markdown="block">
+<summary>Java</summary>
 ```java
 import java.io.*;
 import java.lang.*;
@@ -188,9 +190,10 @@ class Solution {
   }
 }
 ```
+</details>
 
-### Python
-
+<details markdown="block">
+<summary>Python</summary>
 ```python
 from typing import List
 
@@ -240,3 +243,4 @@ if __name__ == "__main__":
     x = list(map(int, input().split()))
     print(Solution.solve(n, k, x))
 ```
+</details>
