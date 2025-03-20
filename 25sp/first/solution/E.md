@@ -6,6 +6,19 @@ parent: Solutions
 
 # E - Operations
 
+## Analysis
+
+Let's revisit the [Knapsack problem](https://stanford-cs161.github.io/winter2025/assets/files/lecture13-notes.pdf#page=5.41) first.
+
+{: .note-title}
+> Knapsack Problem
+>
+> Given $$n$$ types of items, item of type $$i$$ has weight $$w_i$$ and value $$v_i$$. You have a bag with capacity $$C$$. You have to choose the items such that the sum of items chosen is at most $$C$$ and the sum of values should be maximised.
+>
+> - **[Unbounded Version]** There are infinite numbers of items of each type
+> - **[0-1 Version]** Each type of item can only be chosen at most once.
+
+
 ## Codes
 
 {% tabs Code %}
