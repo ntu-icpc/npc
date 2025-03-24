@@ -28,4 +28,4 @@ The contest discussion is conducted to discuss the solutions to the problems in 
 
 ## Rules of Contest
 
-The rule of the contest is same as the first contest. [here](/../1st)
+The rule of the contest is same as the first contest. [here](/../first)
