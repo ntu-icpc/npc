@@ -16,6 +16,7 @@ Nanyang Programming Contest 2025: The 1st Contest
 > Annoucement
 > - [2025-03-24] **Rules**: The rules are moved to the parent of this page at [here](/npc/25sp).
 > - [2025-03-15] **Solution**: We have uploaded the [solution](/npc/25sp/first/solution/Editorial.pdf) for the contest.
+
 ## Details of the Contest
 
 - **Date**: 15th March 2025
