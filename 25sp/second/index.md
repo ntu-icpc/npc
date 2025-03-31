@@ -12,6 +12,10 @@ nav_order: 2
 Nanyang Programming Contest 2025: Stage 2 - The 2nd Contest
 </a>
 
+## Registration
+
+[![](imgs/register.svg)](https://forms.gle/bnTxuGMZrAZfDp6F6)
+
 ## Details of the Contest
 
 - **Date**: 5th April 2025
