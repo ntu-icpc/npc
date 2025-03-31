@@ -14,7 +14,11 @@ Nanyang Programming Contest 2025: Stage 2 - The 2nd Contest
 
 ## Registration
 
-[![](imgs/register.svg)](https://forms.gle/bnTxuGMZrAZfDp6F6)
+<div style="text-align: center;">
+  <a href="https://forms.gle/bnTxuGMZrAZfDp6F6">
+    <img src="imgs/register.svg" alt="Register" style="width: 200px;">
+  </a>
+</div>
 
 ## Details of the Contest
 
