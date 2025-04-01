@@ -43,7 +43,7 @@ Remark: We may still allowed more software in future.
 
 | Software | Version |
 | -------- | ------- |
-| [VSCode](https://code.visualstudio.com/) | 1.98 |
+| [VSCode](https://code.visualstudio.com/) | 1.98.2 |
 | [GCC](https://gcc.gnu.org/) | 13.3.0 |
 | [Clang](https://clang.llvm.org/) | 11.0.0 |
 | [GDB](https://www.gnu.org/software/gdb/) | 14.2 |
