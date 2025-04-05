@@ -6,12 +6,12 @@ parent: Solutions
 
 # A - Triangle
 
-## $$a=b$$
+## 80 pts: $$a=b$$
 
 We can draw:
 
 <div style="text-align: center;">
-  <img src="imgs/A/sum.svg" alt="Triangle Sum Diagram" style="width: 60%;">
+  <img src="imgs/A/sum.svg" alt="Triangle Sum Diagram" style="width: 50%;">
 </div>
 
 So the answer is:
@@ -35,6 +35,7 @@ if __name__ == "__main__":
 ```
 {% endtab %}
 {% tab Code C %}
+```c
 #include <stdio.h>
 
 int64_t solve(int a, int b);
@@ -101,6 +102,14 @@ func main() {
 ```
 {% endtab %}
 {% endtabs %}
+
+## 100 pts: $$a \neq b$$
+
+We can draw the triangle:
+
+<div style="text-align: center; width: 70%; margin: 0 auto;">
+  <img src="imgs/A/sollog.svg" alt="Solution logic diagram">
+</div>
 
 ## GCD Solutions
 
