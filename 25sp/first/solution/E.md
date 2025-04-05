@@ -1,7 +1,7 @@
 ---
 title: E - Operations
 layout: page
-parent: Solutions
+parent: 1st Solutions
 ---
 
 # E - Operations

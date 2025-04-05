@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Solutions
+title: 1st Solutions
 parent: NPC25 The 1st Contest
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: H - Bye Bye
 layout: page
-parent: Solutions
+parent: 1st Solutions
 ---
 
 # H - Bye Bye

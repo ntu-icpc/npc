@@ -1,7 +1,7 @@
 ---
 title: F - Subsequence
 layout: page
-parent: Solutions
+parent: 1st Solutions
 ---
 
 # F - Subsequence

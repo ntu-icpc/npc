@@ -1,7 +1,7 @@
 ---
 title: C - Graph
 layout: page
-parent: Solutions
+parent: 1st Solutions
 ---
 
 # C - Graph

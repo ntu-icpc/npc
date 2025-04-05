@@ -1,7 +1,7 @@
 ---
 title: G - Tree
 layout: page
-parent: Solutions
+parent: 1st Solutions
 ---
 
 # G - Tree

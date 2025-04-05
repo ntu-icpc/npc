@@ -1,7 +1,7 @@
 ---
 title: A - Lucky Seven
 layout: page
-parent: Solutions
+parent: 1st Solutions
 ---
 
 # A - Lucky Seven
