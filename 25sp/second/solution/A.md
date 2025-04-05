@@ -1,14 +1,14 @@
 ---
-title: A - Lucky Seven
+title: A - Triangle
 layout: page
-parent: 1st Solutions
+parent: Solutions
 ---
 
-# A - Lucky Seven
+# A - Triangle
 
 ## Analysis
 
-Just `print(s[6])` because the string stored in most language are in 0-indexed.
+![](imgs/A/sollog.svg)
 
 ## Codes
 
