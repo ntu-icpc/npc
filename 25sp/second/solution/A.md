@@ -10,7 +10,9 @@ parent: Solutions
 
 We can draw:
 
-![](imgs/A/sum.svg)
+<div style="text-align: center;">
+  <img src="imgs/A/sum.svg" alt="Triangle Sum Diagram" style="width: 60%;">
+</div>
 
 So the answer is:
 
@@ -102,7 +104,9 @@ func main() {
 
 ## GCD Solutions
 
-![](imgs/A/sollog.svg)
+<div style="text-align: center; width: 80%; margin: 0 auto;">
+  <img src="imgs/A/sollog.svg" alt="Solution logic diagram">
+</div>
 
 {% tabs Code %}
 
