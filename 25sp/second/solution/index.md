@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 2nd Solutions
-parent: NPC25 The 2st Contest
+parent: NPC25 The 2nd Contest
 ---
 
 # NPC25 The 2st Contest Solution
