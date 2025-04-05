@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Solutions
+title: 2nd Solutions
 parent: NPC25 The 2st Contest
 ---
 
