@@ -6,6 +6,18 @@ parent: Solutions
 
 # A - Triangle
 
+## $$a=b$$
+
+We can draw:
+
+![](imgs/A/sum.svg)
+
+So the answer is:
+
+$$
+s = (a + 1) + a + \cdots + 1 = \frac{(a + 2)(a + 1)}{2}
+$$
+
 ## GCD Solutions
 
 ![](imgs/A/sollog.svg)
