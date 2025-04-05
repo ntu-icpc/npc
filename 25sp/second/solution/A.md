@@ -20,8 +20,8 @@ $$
 s = (a + 1) + a + \cdots + 1 = \frac{(a + 2)(a + 1)}{2}
 $$
 
-{% tabs Code %}
-{% tab Code Python %}
+{% tabs Code80 %}
+{% tab Code80 Python %}
 ```python
 class Solution:
     @staticmethod
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     print(Solution.solve(a, b))
 ```
 {% endtab %}
-{% tab Code C %}
+{% tab Code80 C %}
 ```c
 #include <stdio.h>
 
@@ -50,7 +50,7 @@ int main() {
 int64_t solve(int a, int b) { return (int64_t)(a + 1) * (b + 2) / 2; }
 ```
 {% endtab %}
-{% tab Code C++ %}
+{% tab Code80 C++ %}
 ```cpp
 #include <iostream>
 
@@ -66,7 +66,7 @@ int main() {
 int64_t solve(int a, int b) { return (int64_t)(a + 1) * (b + 2) / 2; }
 ```
 {% endtab %}
-{% tab Code Java %}
+{% tab Code80 Java %}
 ```java
 import java.util.Scanner;
 
@@ -84,7 +84,7 @@ public class Solution {
 }
 ```
 {% endtab %}
-{% tab Code Go %}
+{% tab Code80 Go %}
 ```go
 package main
 
@@ -117,9 +117,9 @@ We can draw the triangle:
   <img src="imgs/A/sollog.svg" alt="Solution logic diagram">
 </div>
 
-{% tabs Code %}
+{% tabs Code100 %}
 
-{% tab Code Java %}
+{% tab Code100 Java %}
 ```java
 import java.util.Scanner;
 
@@ -144,7 +144,7 @@ public class Solution {
 ```
 {% endtab %}
 
-{% tab Code Go %}
+{% tab Code100 Go %}
 ```go
 package main
 
