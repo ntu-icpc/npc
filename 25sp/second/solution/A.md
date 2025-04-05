@@ -6,103 +6,59 @@ parent: Solutions
 
 # A - Triangle
 
-## Analysis
+## GCD Solutions
 
 ![](imgs/A/sollog.svg)
 
-## Codes
-
 {% tabs Code %}
-
-{% tab Code C %}
-```c
-#include <stdio.h>
-
-/**
- * This function returns Bob's lucky letter.
- *
- * @param s A character array of length 10 representing the letters Bob saw.
- * @return The 7-th letter in the string, which is Bob's lucky letter.
- */
-char solve(char *s) { return s[6]; }
-
-int main() {
-  char s[10];
-  scanf("%s", s);
-  printf("%c\n", solve(s));
-  return 0;
-}
-```
-{% endtab %}
-
-{% tab Code C++ %}
-```cpp
-#include <iostream>
-#include <string>
-
-class Solution {
- public:
-  /**
-   * This function returns Bob's lucky letter.
-   *
-   * @param s A string of length 10 representing the letters Bob saw.
-   * @return The 7-th letter in the string, which is Bob's lucky letter.
-   */
-  static char solve(const std::string &s) { return s[6]; }
-};
-
-int main() {
-  std::string s;
-  std::cin >> s;
-  std::cout << Solution::solve(s) << std::endl;
-  return 0;
-}
-```
-{% endtab %}
 
 {% tab Code Java %}
 ```java
 import java.util.Scanner;
 
-class Solution {
-  /**
-   * @param s: the string of length 10 representing the letters Bob saw
-   * @return: the 7-th letter in the string, which is Bob's lucky letter
-   */
-  public static char solve(String s) {
-    return s.charAt(6);
+public class Solution {
+  public static int gcd(int a, int b) {
+    while (b != 0) {
+      int temp = b;
+      b = a % b;
+      a = temp;
+    }
+    return a;
   }
 
-  public static void main(String[] args) throws java.lang.Exception {
-    Scanner input = new Scanner(System.in);
-    String s = input.nextLine();
-    System.out.println(solve(s));
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int a = scanner.nextInt();
+    int b = scanner.nextInt();
+    System.out.println(((long) (a + 1) * (b + 1) + gcd(a, b) + 1) / 2);
+    scanner.close();
   }
 }
 ```
 {% endtab %}
 
-{% tab Code Python %}
-```python
-class Solution:
-    @staticmethod
-    def solve(s: str) -> str:
-        """
-        Returns Bob's lucky letter.
+{% tab Code Go %}
+```go
+package main
 
-        Args:
-            s (str): The string of length 10 representing the letters Bob saw.
+import "fmt"
 
-        Returns:
-            str: The 7-th letter in the string, which is Bob's lucky letter.
-        """
-        return s[6]
+func gcd(a, b int) int {
+	for b != 0 {
+		a, b = b, a%b
+	}
+	return a
+}
 
+func solve(a, b int) int {
+	return ((a+1)*(b+1) + gcd(a, b) + 1) / 2
+}
 
-if __name__ == "__main__":
-    s = input()
-    print(Solution.solve(s))
+func main() {
+	var a, b int
+	fmt.Scan(&a, &b)
+	fmt.Println(solve(a, b))
+}
 ```
 {% endtab %}
-
 {% endtabs %}
