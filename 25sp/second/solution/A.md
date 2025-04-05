@@ -117,9 +117,9 @@ We can draw the triangle:
   <img src="imgs/A/sollog.svg" alt="Solution logic diagram">
 </div>
 
-{% tabs Code100 %}
+{% tabs CodeGCD %}
 
-{% tab Code100 Java %}
+{% tab CodeGCD Java %}
 ```java
 import java.util.Scanner;
 
@@ -144,7 +144,7 @@ public class Solution {
 ```
 {% endtab %}
 
-{% tab Code100 Go %}
+{% tab CodeGCD Go %}
 ```go
 package main
 
