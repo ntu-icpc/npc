@@ -241,9 +241,57 @@ func main() {
 
 ## GCD Solutions
 
+We need to discover some properties:
+
 <div style="text-align: center; width: 80%; margin: 0 auto;">
   <img src="imgs/A/sollog.svg" alt="Solution logic diagram">
 </div>
+
+For simplicity:
+
+$$\triangle = \frac{\square + \diagdown}{2}$$
+
+It is easy to know that
+
+$$\square = (a + 1) (b+1)$$
+
+So the question is to calculate $$\diagdown$$.
+
+An observation is
+
+$$\diagdown = \diagup$$
+
+So we need to count $$(x, y)$$ such that:
+
+$$
+y=\frac{a}{b}x\Longrightarrow ax=by
+$$
+
+Let $$c = ax=by$$, we have $$a, b\mid c$$, which is
+
+$$
+c = k\cdot \text{lcm}(a, b), k\in\mathbb{Z}
+$$
+
+And we have constrain $$0\le c\le ab$$ as $$0\le x\le b, 0\le y\le a$$.
+
+$$
+0\le k\cdot \text{lcm}(a, b)\le ab\Longrightarrow 0\le k\le \frac{ab}{\text{lcm}(a, b)}=\gcd(a, b)
+$$
+
+So
+
+$$
+\diagdown = \gcd(a, b) + 1
+$$
+
+Which means the answer is
+
+$$
+\triangle = \frac{\square + \diagdown}{2} = \frac{(a+1)(b+1)+\gcd(a, b) + 1}{2}
+$$
+
+We can use [Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm) to calculate $$\gcd(a, b)$$ in $$\mathcal{O}(\log \max\{a, b\})$$ time. (Or [`std::gcd`](https://en.cppreference.com/w/cpp/numeric/gcd) in C++, [`math.gcd`](https://docs.python.org/3/library/math.html#math.gcd) in Python).
 
 {% tabs CodeGCD %}
 
