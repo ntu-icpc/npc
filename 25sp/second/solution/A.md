@@ -362,6 +362,105 @@ and [Bézout's identity](https://en.wikipedia.org/wiki/Bézout_identity).
 
 This approach also has a time complexity of $$\mathcal{O}(\log \max\{a, b\})$$.
 
+{% tabs CodeBezout %}
+{% tab CodeBezout C %}
+```c
+#include <inttypes.h>
+#include <stdint.h>
+#include <stdio.h>
+
+int64_t solve(int a, int b);
+
+int main() {
+  int a, b;
+  scanf("%d%d", &a, &b);
+  printf("%" PRId64 "\n", solve(a, b));
+  return 0;
+}
+
+int exgcd(int a, int b, int64_t *x, int64_t *y) {
+  if (b == 0) {
+    *x = 1;
+    *y = 0;
+    return a;
+  }
+  int g = exgcd(b, a % b, x, y);
+  int64_t t = *x;
+  *x = *y;
+  *y = t - a / b * *y;
+  return g;
+}
+
+/**
+ * Number of solutions of ax + by = a * b
+ */
+int64_t sol_num(int a, int b) {
+  int64_t x, y;
+  int g = exgcd(a, b, &x, &y);
+  int64_t lcm = a / g * b;
+  x *= lcm;
+  y *= lcm;
+
+  // now we have a * x + b * y = a * b
+  // a * (x + k * b / g) + b * (y - k * a / g) = a * b
+  // a * x + b * y = a * b
+  // so x = x + k * b / g, y = y - k * a / g
+  // we need x >= 0, y >= 0
+  // so - g * x / b <= k <= g * y / a
+  // so the answer is g * y / a + g * x / b + 1
+  return g * y / a + g * x / b + 1;
+}
+
+int64_t solve(int a, int b) {
+  return ((int64_t)(a + 1) * (b + 1) + sol_num(a, b)) / 2;
+}
+```
+{% endtab %}
+{% tab CodeBezout Go %}
+```go
+package main
+
+import "fmt"
+
+func exgcd(a, b int) (int, int, int) {
+	if b == 0 {
+		return a, 1, 0
+	}
+	g, x, y := exgcd(b, a%b)
+	return g, y, x - a/b*y
+}
+
+// Number of solutions of ax + by = a * b
+func sol_num(a, b int) int {
+	g, x0, y0 := exgcd(a, b)
+
+	lcm := a / g * b
+	x0 *= lcm
+	y0 *= lcm
+
+	// now we have a * x0 + b * y0 = a * b
+	// a * (x0 + k * b / g) + b * (y0 - k * a / g) = a * b
+	// a * x + b * y = a * b
+	// so x = x0 + k * b / g, y = y0 - k * a / g
+	// we need x >= 0, y >= 0
+	// so - g * x0 / b <= k <= g * y0 / a
+	// so the answer is g * y0 / a + g * x0 / b + 1
+	return g*y0/a + g*x0/b + 1
+}
+
+func solve(a, b int) int {
+	return ((a+1)*(b+1) + sol_num(a, b)) / 2
+}
+
+func main() {
+	var a, b int
+	fmt.Scan(&a, &b)
+	fmt.Println(solve(a, b))
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ## Pick's theorem
 
 Suppose that a polygon has integer coordinates for all of its vertices:
