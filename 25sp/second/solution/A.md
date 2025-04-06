@@ -118,6 +118,7 @@ y\le a - \frac{a}{b}x
 $$
 
 For all $$x\in [0, b]$$, we need:
+
 $$
 0\le y\le a-\frac{a}{b}x
 $$
@@ -125,6 +126,7 @@ $$
 So for one $$x$$, we have $$1 + \left\lfloor a-\frac{a}{b}x\right\rfloor$$ valid $$y$$.
 
 So the answer is:
+
 $$
 \sum_{x=0}^b 1 + \left\lfloor a-\frac{a}{b}x\right\rfloor
 $$
