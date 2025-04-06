@@ -345,3 +345,47 @@ func main() {
 ```
 {% endtab %}
 {% endtabs %}
+
+## Bézout's Identity
+
+At first, I didn't find $$\diagdown = \diagup$$, so I tried to solve $$\diagdown$$ directly.
+
+We can have:
+
+$$
+y = a - \frac{a}{b}x \Longrightarrow ax + by = ab
+$$
+
+This is a classic Linear Diophantine equation, which can be easily solved using
+[Extended Euclidean Algorithm](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
+and [Bézout's identity](https://en.wikipedia.org/wiki/Bézout_identity).
+
+This approach also has a time complexity of $$\mathcal{O}(\log \max\{a, b\})$$.
+
+## Pick's theorem
+
+Suppose that a polygon has integer coordinates for all of its vertices:
+
+$$\mathcal{A} = \mathcal{I} + \frac{\mathcal{B}}{2} - 1$$
+
+- $$\mathcal{A}$$ is the area of the polygon
+- $$\mathcal{I}$$ is the number of interior points
+- $$\mathcal{B}$$ is the number of boundary points
+
+So the answer is
+
+$$
+\mathcal{I} + \mathcal{B} = \left(\mathcal{A} - \frac{\mathcal{B}}{2} + 1\right) + \mathcal{B} = \mathcal{A} + \frac{\mathcal{B}}{2} + 1 = \frac{ab}{2} + 1 + \frac{\mathcal{B}}{2}
+$$
+
+So the question is the find $$\mathcal{B}$$, which is
+
+$$
+a + b - 1 + \diagdown = a + b + \gcd(a, b)
+$$
+
+So
+
+$$
+\mathcal{I} + \mathcal{B} = \frac{ab + a + b + \gcd(a, b)}{2} + 1
+$$
