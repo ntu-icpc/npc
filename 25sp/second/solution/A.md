@@ -108,8 +108,134 @@ func main() {
 We can draw the triangle:
 
 <div style="text-align: center; width: 70%; margin: 0 auto;">
-  <img src="imgs/A/sollog.svg" alt="Solution logic diagram">
+  <img src="imgs/A/a_neq_b.svg" alt="Solution logic diagram">
 </div>
+
+So we need to count $$(x, y)$$ such that:
+
+$$
+y\le a - \frac{a}{b}x
+$$
+
+For all $$x\in [0, b]$$, we need:
+$$
+0\le y\le a-\frac{a}{b}x
+$$
+
+So for one $$x$$, we have $$1 + \left\lfloor a-\frac{a}{b}x\right\rfloor$$ valid $$y$$.
+
+So the answer is:
+$$
+\sum_{x=0}^b 1 + \left\lfloor a-\frac{a}{b}x\right\rfloor
+$$
+
+We can compute this in $$\mathcal{O}(\max\{a, b\})$$ time.
+
+{% tabs Code100 %}
+{% tab Code100 Python %}
+```python
+class Solution:
+    @staticmethod
+    def solve(a: int, b: int) -> int:
+        ans = 0
+        for x in range(b + 1):
+            ans += a * x // b + 1
+        return ans
+
+
+if __name__ == "__main__":
+    a, b = map(int, input().split())
+    print(Solution.solve(a, b))
+```
+{% endtab %}
+{% tab Code100 C %}
+```c
+#include <inttypes.h>
+#include <stdint.h>
+#include <stdio.h>
+
+int64_t solve(int a, int b);
+
+int main() {
+  int a, b;
+  scanf("%d%d", &a, &b);
+  printf("%" PRId64 "\n", solve(a, b));
+  return 0;
+}
+
+int64_t solve(int a, int b) {
+  int64_t ans = 0;
+  for (int x = 0; x <= b; ++x) {
+    ans += (int64_t)a * x / b + 1;
+  }
+  return ans;
+}
+```
+{% endtab %}
+{% tab Code100 C++ %}
+```cpp
+#include <cstdint>
+#include <iostream>
+
+class Solution {
+ public:
+  static int64_t solve(int a, int b) { return (int64_t)(a + 1) * (b + 2) / 2; }
+};
+
+int main() {
+  int a, b;
+  std::cin >> a >> b;
+  std::cout << Solution::solve(a, b) << std::endl;
+  return 0;
+}
+```
+{% endtab %}
+{% tab Code100 Java %}
+```java
+import java.util.Scanner;
+
+public class Solution {
+  static long solve(int a, int b) {
+    long ans = 0;
+    for (int x = 0; x <= b; x++) {
+      ans += (long) a * x / b + 1;
+    }
+    return ans;
+  }
+
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int a = scanner.nextInt();
+    int b = scanner.nextInt();
+    System.out.println(solve(a, b));
+    scanner.close();
+  }
+}
+```
+{% endtab %}
+{% tab Code100 Go %}
+```go
+package main
+
+import "fmt"
+
+func solve(a, b int) int {
+	ans := 0
+	for x := 0; x <= b; x++ {
+		ans += a*x/b + 1
+	}
+	return ans
+}
+
+func main() {
+	var a, b int
+	fmt.Scan(&a, &b)
+	fmt.Println(solve(a, b))
+}
+```
+{% endtab %}
+{% endtabs %}
+
 
 ## GCD Solutions
 
