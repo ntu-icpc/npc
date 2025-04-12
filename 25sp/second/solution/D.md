@@ -119,7 +119,7 @@ $$\rightarrow$$ $$DP[b[1]][11111110_2] = max(itself, DP[0][11111111_2] + a[b[1]]
 
 $$\rightarrow$$ $$DP[b[2]][11111101_2] = max(itself, DP[0][11111111_2] + a[b[2]]$$
 
-$$\dots$$
+...
 
 More generally, for $$DP[i][j]$$ we can try to use each remaining card - condition:($$j \& 2^{k-1}\neq0$$)
 
