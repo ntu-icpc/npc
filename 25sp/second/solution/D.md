@@ -106,12 +106,13 @@ The dynamic programming state is $$DP[i][bitmask]$$ representing the best $$Ener
 - The remaining cards we hold in our hand are encoded by the bitmask (which is explained below).
 - bitmask is an integer (we understood it in binary representation), where the $$j$$th bit from Least Significant Bit is on ($$=1$) implies that we still have the $$j$$th card on hand.
 
-{: .note-title }
-> Explaination
->
-> For example DP[23][11]. We have $$11_{10} = 1011_{2}$$.
->
-> The value of $$DP[23][11]$$ is the maximal possible energy he can get when he stands in the 23rd Pillar and holds the first, second and the fourth cards.
+### Explaination
+
+For example $$DP[23][11]$$. We have $$11_{10} = 1011_{2}$$.
+
+The value of $$DP[23][11]$$ is the maximal possible energy he can get when he stands in the 23rd Pillar and holds the first, second and the fourth cards.
+
+### State Transition
 
 $$DP[0][11111111_{2}]=R$$ (used the energy card)
 
@@ -125,6 +126,14 @@ More generally, for $$DP[i][j]$$ we can try to use each remaining card - conditi
 
 $$DP[i+b[k]][j\oplus2^{k-1}] = max(itself, DP[i][j] + a[i+b[k]])$$
 
-- Special case 1:If $$j\oplus2^{k-1} =0$$, we flush the set of cards and use the energy card immediately.
+- Special case 1:If $$j\oplus 2^{k-1} =0$$, we flush the set of cards and use the energy card immediately.
 
 - Special case 2:If $$i+b[k] >N$$, we reached and destination.
+
+### Time & Space Complexity
+
+The size of the state space is $$N*2^K$$ and each state have $$\mathtt{bitcount}(K)$$ transitions.
+
+- Space Complexity: $$O(N*2^K)$$
+- Time Complexity: $$O(NK*2^K)$$
+
