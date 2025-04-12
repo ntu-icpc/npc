@@ -12,7 +12,7 @@ Given an array that consists of integers. Use the set of cards to move to get th
 
 Subtasks:
 
-- For all task, $$1 \leq N \leq 10^5, 1\leq R \leq 10^9, 0 \leq |a| \leq 10^9$$
+- For all task, $$1 \leq N \leq 10^5, 1\leq R \leq 10^9, 0 \leq \vert a\vert \leq 10^9$$
 - Subtask 1 & 2: $$K = 1$$
 - Subtask 3: $$K = 2$$
 - Subtask 4: $$K = 4$$
