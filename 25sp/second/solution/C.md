@@ -79,7 +79,7 @@ int main() {
 
 #### Idea
 
-With $$1\leq N,M \leq 500$$, $$O(N \times M)$$ solution are able to pass. Therefore, it is just a classic DP solution.
+With $$1\leq N,M \leq 500$$, $$\mathcal{O}(N \times M)$$ solution are able to pass. Therefore, it is just a classic DP solution.
 
 #### Implementation
 
@@ -125,4 +125,60 @@ int main() {
 {% endtab %}
 {% endtabs %}
 
+### Subtask 3: Rolling DP
+
+#### Motivation
+
+With $$1\leq N, M\leq 10000$$, $$\mathcal{O}(N \times M)$$ solution are still able to pass. However, if the two-dimensional DP array is constructed with size $$N\times M$$, your solution would get Memory Limit Exceeded (MLE). This is because the space complexity is $$\mathcal{O}(N\times M)$$.
+
+From SC1006, if the DP arrays store 32-bit integers, what is the maximum number of bytes used by the DP array? 
+
+32-bit is equivalent to 4 bytes. If $$N = M = 10000$$, the number of bytes is $$N \times M \times 4 = 4 \times 10^8 B \approx 381 MB$$. 
+
+The memory limit is $$512 MB$$. Therefore, including some required memory storage (TODO how much), the DP array would use too much memory space.
+
+The idea is to use "Rolling DP" to compress the space to $$\mathcal{O}(N + M)$$.
+
+#### Implementation
+
+Notice that, for any $$i$$, all the DP with first dimension is $$i$$ only depends on the DP with first dimension is $$i - 1$$. That is, given $$i$$, $$\forall j \in [0,M]$$, $$DP[i][j]$$ only depends on $$DP[i - 1][j]$$ or $$DP[i - 1][j - 1]$$.
+
+If bottom-up DP is used (Nested Loop of $$i$$ followed by $$j$$), it is not required to store any states with first dimension $$\leq i-2$$.
+
+Therefore, the transition is as follows:
+
+- $$DP[i \% 2][j] = DP[(i - 1) \% 2][j - 1]$$, if $$a_i == a_j$$ and $$i \geq 1, j\geq 1$$.
+- $$DP[i \% 2][j] = \max(DP[(i - 1) \% 2][j], DP[i \% 2][j - 1])$$, otherwise (if $$i-1$$ or $$j-1$$ would be negative, just ignore it). 
+
+The answer is $$DP[N\%2][M]$$.
+
+{% tabs Subtask3 %}
+{% tab Subtask3 C++ %}
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int n, m;
+  cin >> n >> m;
+  vector<int> a(n), b(m);
+  for (auto& i : a) cin >> i;
+  for (auto& i : b) cin >> i;
+
+  int dp[2][m + 1];
+  memset(dp, 0, sizeof(dp));
+  dp[0][0] = 0;
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < m; j++) {
+      if (a[i] == b[j])
+        dp[(i + 1) % 2][j + 1] = dp[i % 2][j] + 1;
+      else
+        dp[(i + 1) % 2][j + 1] = max(dp[(i + 1) % 2][j], dp[i % 2][j + 1]);
+    }
+  }
+  cout << dp[n % 2][m] << "\n";
+}
+```
+{% endtab %}
+{% endtabs %}
 
