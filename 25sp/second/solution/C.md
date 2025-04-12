@@ -182,3 +182,201 @@ int main() {
 {% endtab %}
 {% endtabs %}
 
+### Subtask 4: Two Pointers
+
+$$1\leq N,M \leq 100000$$. $$\mathcal{O}(NM)$$ solution would TLE.
+
+The idea is to take advantage that arrays $$A$$ and $$B$$ are in ascending order.
+
+For a given $$i$$ and $$j$$, if $$a_i < b_j$$ and denote $$i' > i$$ as the first index such that $$a_{i'} \geq b_j$$, we know that for all $$j'' \geq j$$ and $$i \leq i'' \leq i'$$, $$DP[i''][j''] = DP[i][j]$$.
+
+With this, we do not need to compute the answer to many DP states. We just need to increment $$i$$ to $$i'$$ and compute the solution. Likewise, if $$a_i > b_j$$, we increment $$j$$ until $$a_i \leq b_j$$.
+
+If $$a_i = b_j$$, then we increment both $$i$$ and $$j$$ by one and add 1 to the answer.
+
+This leads to a two pointer algorithm.
+
+{% tabs Subtask4 %}
+{% tab Subtask4 Python %}
+```python
+class Solution:
+    @staticmethod
+    def solve(n: int, m: int, a: list[int], b: list[int]) -> int:
+        ans = 0
+        x = y = 0
+        while x < n and y < m:
+            if a[x] == b[y]:
+                ans += 1
+                x += 1
+                y += 1
+            elif a[x] < b[y]:
+                x += 1
+            else:
+                y += 1
+        return ans
+
+
+if __name__ == "__main__":
+    n, m = map(int, input().split())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    print(Solution.solve(n, m, a, b))
+```
+{% endtab %}
+{% tab Subtask4 C %}
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int solve(int n, int m, int *a, int *b) {
+  int p1 = 0, p2 = 0, ans = 0;
+  while (p1 != n && p2 != m) {
+    if (a[p1] == b[p2]) {
+      ans++;
+      p1++;
+      p2++;
+    } else if (a[p1] < b[p2]) {
+      p1++;
+    } else {
+      p2++;
+    }
+  }
+  return ans;
+}
+
+int main() {
+  int n, m;
+  scanf("%d%d", &n, &m);
+  int *a = (int *)calloc(n, sizeof(int));
+  int *b = (int *)calloc(m, sizeof(int));
+  for (int i = 0; i < n; i++) {
+    scanf("%d", &a[i]);
+  }
+  for (int i = 0; i < m; i++) {
+    scanf("%d", &b[i]);
+  }
+  int result = solve(n, m, a, b);
+  printf("%d\n", result);
+  free(a);
+  free(b);
+  return 0;
+}
+```
+{% endtab %}
+{% tab Subtask4 C++ %}
+```cpp
+#include <iostream>
+#include <vector>
+
+class Solution {
+ public:
+  static int solve(int n, int m, std::vector<int> a, std::vector<int> b) {
+    int p1 = 0, p2 = 0, ans = 0;
+    while (p1 != n && p2 != m) {
+      if (a[p1] == b[p2]) {
+        ans++;
+        p1++;
+        p2++;
+      } else if (a[p1] < b[p2]) {
+        p1++;
+      } else {
+        p2++;
+      }
+    }
+    return ans;
+  }
+};
+
+int main() {
+  int n, m;
+  std::cin >> n >> m;
+  std::vector<int> a(n), b(m);
+  for (int i = 0; i < n; i++) {
+    std::cin >> a[i];
+  }
+  for (int i = 0; i < m; i++) {
+    std::cin >> b[i];
+  }
+  std::cout << Solution::solve(n, m, a, b) << std::endl;
+  return 0;
+}
+```
+{% endtab %}
+{% tab Subtask4 Java %}
+```java
+import java.util.Scanner;
+class Solution {
+  public static int solve(int n, int m, int[] a, int[] b) {
+    int p1 = 0, p2 = 0, ans = 0;
+    while (p1 != n && p2 != m) {
+      if (a[p1] == b[p2]) {
+        ans++;
+        p1++;
+        p2++;
+      } else if (a[p1] < b[p2]) {
+        p1++;
+      } else {
+        p2++;
+      }
+    }
+    return ans;
+  }
+
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int n = scanner.nextInt();
+    int m = scanner.nextInt();
+    int[] a = new int[n];
+    int[] b = new int[m];
+    for (int i = 0; i < n; i++) {
+      a[i] = scanner.nextInt();
+    }
+    for (int i = 0; i < m; i++) {
+      b[i] = scanner.nextInt();
+    }
+    System.out.println(solve(n, m, a, b));
+    scanner.close();
+  }
+}
+```
+{% endtab %}
+{% tab Subtask4 Go %}
+```go
+package main
+
+import "fmt"
+
+func solve(n int, m int, a []int, b []int) int {
+	p1 := 0
+	p2 := 0
+	ans := 0
+	for p1 < n && p2 < m {
+		if a[p1] == b[p2] {
+			ans++
+			p1++
+			p2++
+		} else if a[p1] < b[p2] {
+			p1++
+		} else {
+			p2++
+		}
+	}
+	return ans
+}
+
+func main() {
+	var n, m int
+	fmt.Scan(&n, &m)
+	a := make([]int, n)
+	b := make([]int, m)
+	for i := 0; i < n; i++ {
+		fmt.Scan(&a[i])
+	}
+	for i := 0; i < m; i++ {
+		fmt.Scan(&b[i])
+	}
+	fmt.Println(solve(n, m, a, b))
+}
+```
+{% endtab %}
+{% endtabs %}
