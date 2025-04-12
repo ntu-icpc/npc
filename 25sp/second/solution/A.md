@@ -20,8 +20,8 @@ $$
 s = (a + 1) + a + \cdots + 1 = \frac{(a + 2)(a + 1)}{2}
 $$
 
-{% tabs Code80 %}
-{% tab Code80 Python %}
+{% tabs SecondACode80 %}
+{% tab SecondACode80 Python %}
 ```python
 class Solution:
     @staticmethod
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     print(Solution.solve(a, b))
 ```
 {% endtab %}
-{% tab Code80 C %}
+{% tab SecondACode80 C %}
 ```c
 #include <stdio.h>
 
@@ -50,7 +50,7 @@ int main() {
 int64_t solve(int a, int b) { return (int64_t)(a + 1) * (b + 2) / 2; }
 ```
 {% endtab %}
-{% tab Code80 C++ %}
+{% tab SecondACode80 C++ %}
 ```cpp
 #include <iostream>
 
@@ -66,7 +66,7 @@ int main() {
 int64_t solve(int a, int b) { return (int64_t)(a + 1) * (b + 2) / 2; }
 ```
 {% endtab %}
-{% tab Code80 Java %}
+{% tab SecondACode80 Java %}
 ```java
 import java.util.Scanner;
 
@@ -84,7 +84,7 @@ public class Solution {
 }
 ```
 {% endtab %}
-{% tab Code80 Go %}
+{% tab SecondACode80 Go %}
 ```go
 package main
 
@@ -133,8 +133,8 @@ $$
 
 We can compute this in $$\mathcal{O}(\max\{a, b\})$$ time.
 
-{% tabs Code100 %}
-{% tab Code100 Python %}
+{% tabs SecondACode100 %}
+{% tab SecondACode100 Python %}
 ```python
 class Solution:
     @staticmethod
@@ -150,7 +150,7 @@ if __name__ == "__main__":
     print(Solution.solve(a, b))
 ```
 {% endtab %}
-{% tab Code100 C %}
+{% tab SecondACode100 C %}
 ```c
 #include <inttypes.h>
 #include <stdint.h>
@@ -174,7 +174,7 @@ int64_t solve(int a, int b) {
 }
 ```
 {% endtab %}
-{% tab Code100 C++ %}
+{% tab SecondACode100 C++ %}
 ```cpp
 #include <cstdint>
 #include <iostream>
@@ -192,7 +192,7 @@ int main() {
 }
 ```
 {% endtab %}
-{% tab Code100 Java %}
+{% tab SecondACode100 Java %}
 ```java
 import java.util.Scanner;
 
@@ -215,7 +215,7 @@ public class Solution {
 }
 ```
 {% endtab %}
-{% tab Code100 Go %}
+{% tab SecondACode100 Go %}
 ```go
 package main
 

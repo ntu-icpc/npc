@@ -96,8 +96,8 @@ Just repeat this complete search until she arrives at the destination.
 >
 > **But if you can solve the subtask, it is already a huge success!**
 
-{% tabs Subtask4 %}
-{% tab Subtask4 Python %}
+{% tabs 2DSubtask4 %}
+{% tab 2DSubtask4 Python %}
 ```python
 class Solution:
     @staticmethod
@@ -144,7 +144,7 @@ if __name__ == "__main__":
     print(Solution.solve(N, K, R, A, B))
 ```
 {% endtab %}
-{% tab Subtask4 C++ %}
+{% tab 2DSubtask4 C++ %}
 ```cpp
 #include <algorithm>
 #include <iostream>
