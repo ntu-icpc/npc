@@ -1,7 +1,7 @@
 ---
 title: NPC25 Welcome AY25/26 Contest
 layout: page
-parent: Fall 2025 Contests
+parent: Spring & Fall 2025 Contests
 nav_order: 2
 ---
 

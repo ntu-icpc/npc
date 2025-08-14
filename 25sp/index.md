@@ -1,5 +1,5 @@
 ---
-title: Sprin & Fall 2025 Contests
+title: Spring & Fall 2025 Contests
 layout: page
 nav_order: 2
 ---

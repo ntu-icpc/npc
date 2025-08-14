@@ -1,7 +1,7 @@
 ---
 title: NPC25 The 1st Contest
 layout: page
-parent: Spring 2025 Contests
+parent: Spring & Fall 2025 Contests
 nav_order: 1
 ---
 
