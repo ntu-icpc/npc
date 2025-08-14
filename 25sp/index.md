@@ -1,5 +1,5 @@
 ---
-title: Spring 2025 Contests
+title: Sprin & Fall 2025 Contests
 layout: page
 nav_order: 2
 ---
@@ -13,9 +13,9 @@ nav_order: 2
 > - [2025-03-08] **Penalty Calculation Updated**: Previously, the penalty was the sum of the first successful submission times for each solved problem. Now, it is the **latest** submission time among all problems where the contestant scored above $$0$$, based on the **earliest occurrence** of their highest-scoring submission.
 > - [2025-03-08] We have listed the [Environment](/npc/env) for the contest. Please check it out.
 
-# Spring 2025 Contests' Rules
+# Spring & Fall 2025 Contests' Rules
 
-The following contest rules applies for both The 1st contest and The 2nd contest.
+The following contest rules applies for both The 1st contest, The 2nd contest and Welcome AY25/26 contest.
 
 ## Eligibility Requirements
 
