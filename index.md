@@ -13,5 +13,5 @@ nav_order: 1
 {: .important-title }
 > Events Coming Soon
 >
-> - **[NPC25: Stage 2 - The Second Contest](25sp/second)**
-> <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="flip3" data-timezone="Asia/Singapore" data-date="2025-04-05 14:00">Nanyang Programming Contest 2025: The 2nd Contest</a>
+> - **[NPC25: Stage 3 - Welcome AY25/26 Contest](25sp/third)**
+> <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="flip3" data-timezone="Asia/Singapore" data-date="2025-08-30 14:00">Nanyang Programming Contest 2025: Welcome AY25/26 Contest</a>
