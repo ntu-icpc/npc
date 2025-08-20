@@ -43,7 +43,7 @@ Remark: We may still allowed more software in future.
 
 | Software | Version |
 | -------- | ------- |
-| [VSCode](https://code.visualstudio.com/) | 1.98.2 |
+| [VSCode](https://code.visualstudio.com/) | 1.103.1 |
 | [GCC](https://gcc.gnu.org/) | 13.3.0 |
 | [Clang](https://clang.llvm.org/) | 11.0.0 |
 | [GDB](https://www.gnu.org/software/gdb/) | 14.2 |
@@ -51,7 +51,7 @@ Remark: We may still allowed more software in future.
 | [CPython](https://www.python.org/) | 3.12.9 |
 | [PyPy](https://www.pypy.org/) | 3.11.11 - v7.3.19 |
 | [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main) | 25.1.1 |
-| [Go](https://go.dev/) | 1.24.1 |
+| [Go](https://go.dev/) | 1.25.0 |
 
 ### C/C++
 
@@ -128,5 +128,14 @@ conda 25.1.1
 
 ```sh
 $ go version
-go version go1.24.1 windows/amd64
+go version go1.25.0 windows/amd64
+```
+
+### VSCode
+
+```sh
+$ code --version
+1.103.1
+360a4e4fd251bfce169a4ddf857c7d25d1ad40da
+x64
 ```
