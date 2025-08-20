@@ -48,7 +48,7 @@ Remark: We may still allowed more software in future.
 | [Clang](https://clang.llvm.org/) | 11.0.0 |
 | [GDB](https://www.gnu.org/software/gdb/) | 14.2 |
 | [OpenJDK](https://openjdk.java.net/) | 23.0.2 |
-| [CPython](https://www.python.org/) | 3.12.9 |
+| [CPython](https://www.python.org/) | 3.12.11 |
 | [PyPy](https://www.pypy.org/) | 3.11.11 - v7.3.19 |
 | [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main) | 25.1.1 |
 | [Go](https://go.dev/) | 1.25.0 |
@@ -106,7 +106,7 @@ OpenJDK 64-Bit Server VM (build 23.0.2+7-58, mixed mode, sharing)
 
 ```sh
 $ python --version
-Python 3.12.9
+Python 3.12.11
 ```
 
 #### PyPy
