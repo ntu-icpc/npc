@@ -141,43 +141,57 @@ class Solution {
    */
   static int solve(int n, std::vector<std::pair<int, int> >& positions) {
     // Implement your solution by completing the following function
-    unordered_map<int, vector<int> > xcoor;
-    unordered_map<int, vector<int> > ycoor;
+    unordered_map<int, vector<int> > row2stones;
+    unordered_map<int, vector<int> > col2stones;
+    vector<pair<int, int> > stones;
     cin >> n;
     for (int i = 0; i < n; i++) {
       int x, y;
-      tie(x, y) = positions[i];
-      if (xcoor.find(x) == xcoor.end()) xcoor[x] = vector<int>();
-      if (ycoor.find(y) == ycoor.end()) ycoor[y] = vector<int>();
-      xcoor[x].emplace_back(i);
-      ycoor[y].emplace_back(i);
+      cin >> x >> y;
+      stones.emplace_back(x, y);
+
+      if (row2stones.find(x) == row2stones.end()) row2stones[x] = vector<int>();
+      if (col2stones.find(y) == col2stones.end()) col2stones[y] = vector<int>();
+      row2stones[x].emplace_back(i);
+      col2stones[y].emplace_back(i);
+    }
+
+    vector<vector<int> > adjlist(n);
+    for (auto& [row, vec] : row2stones) {
+      for (int i = 1; i < vec.size(); i++) {
+        adjlist[vec[i]].emplace_back(vec[i - 1]);
+        adjlist[vec[i - 1]].emplace_back(vec[i]);
+      }
+    }
+    for (auto& [col, vec] : col2stones) {
+      for (int i = 1; i < vec.size(); i++) {
+        adjlist[vec[i]].emplace_back(vec[i - 1]);
+        adjlist[vec[i - 1]].emplace_back(vec[i]);
+      }
     }
 
     vector<int> visited(n, 0);
-
-    function<void(int)> dfs = [&](int u) {
-      if (visited[u]) return;
-      // cout << u << "\n";
-      visited[u] = 1;
-
-      int cx, cy;
-      tie(cx, cy) = positions[u];
-      for (int id : xcoor[cx]) {
-        if (visited[id]) continue;
-        dfs(id);
-      }
-      for (int id : ycoor[cy]) {
-        if (visited[id]) continue;
-        dfs(id);
-      }
-    };
 
     int ncc = 0;
     for (int i = 0; i < n; i++) {
       if (visited[i]) continue;
       ncc++;
-      dfs(i);
+
+      queue<int> q;
+      q.emplace(i);
+      while (!q.empty()) {
+        int u = q.front();
+        q.pop();
+        if (visited[u]) continue;
+        visited[u] = 1;
+
+        for (int v : adjlist[u]) {
+          if (visited[v]) continue;
+          q.emplace(v);
+        }
+      }
     }
+
     return n - ncc;
   }
 };

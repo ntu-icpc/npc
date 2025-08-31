@@ -6,6 +6,8 @@ parent: NPC25 Welcome AY25/26 Contest Solution
 
 # C - Contact
 
+## Rolling hash Solution
+
 {% tabs ThirdC %}
 {% tab ThirdC Python %}
 ```python
@@ -374,6 +376,137 @@ class Solution {
     System.out.println();
 
     input.close();
+  }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+## Binary Search
+{% tabs ThirdC %}
+{% tab ThirdC C++ %}
+```cpp
+#include <iostream>
+#include <string>
+#include <unordered_map>
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+class Solution {
+ public:
+  /**
+   * @param n: number of phone numbers
+   * @param phones: array of strings representing phone number
+   * @param q: number of queries
+   * @param queries: vector of strings representing queries
+   * @return: return an array of size q where the i-th index is the answer to
+   * i-th query
+   */
+  static std::vector<int> solve(int n, std::vector<std::string>& phones, int q,
+                                std::vector<std::string>& queries) {
+    // Implement your solution by completing the following function
+    sort(phones.begin(), phones.end());
+    vector<int> ans(q);
+    for (int i = 0; i < q; i++) {
+      string s = queries[i];
+      int low = 0, high = n;
+      int idx = 0;
+      for (char c : s) {
+        int l = low, r = high;
+        while (l < r) {
+          int m = (l + r) / 2;
+
+          if (phones[m].size() <= idx || phones[m][idx] < c)
+            l = m + 1;
+          else
+            r = m;
+        }
+
+        low = l;
+
+        r = high;
+        while (l < r) {
+          int m = (l + r) / 2;
+          if (phones[m].size() <= idx || phones[m][idx] <= c)
+            l = m + 1;
+          else
+            r = m;
+        }
+        high = l;
+        idx++;
+      }
+      ans[i] = high - low;
+    }
+    return ans;
+  }
+};
+
+int main() {
+  int n, q;
+  std::cin >> n >> q;
+  std::vector<std::string> phones(n);
+  for (int i = 0; i < n; ++i) std::cin >> phones[i];
+  std::vector<std::string> queries(q);
+  for (int i = 0; i < n; ++i) std::cin >> queries[i];
+  std::vector<int> ans = Solution::solve(n, phones, q, queries);
+  for (auto x : ans) {
+    std::cout << x << '\n';
+  }
+  std::cout << "\n";
+  return 0;
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+## Trie
+{% tabs ThirdC %}
+{% tab ThirdC C++ %}
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+struct node {
+  node* nxt[10];
+  int cnt = 0;
+  node() {
+    for (int i = 0; i < 10; i++) nxt[i] = NULL;
+  }
+};
+
+int main() {
+  ios_base::sync_with_stdio(0);
+  cin.tie(0);
+  cout.tie(0);
+  node* root = new node();
+  int n, q;
+  cin >> n >> q;
+
+  for (int i = 0; i < n; i++) {
+    string s;
+    cin >> s;
+    node* cur = root;
+    for (char c : s) {
+      if (cur->nxt[c - '0'] == NULL) cur->nxt[c - '0'] = new node();
+      cur = cur->nxt[c - '0'];
+      cur->cnt += 1;
+    }
+  }
+
+  for (int i = 0; i < q; i++) {
+    string s;
+    cin >> s;
+    node* cur = root;
+    int ans = 0;
+    for (char c : s) {
+      cur = cur->nxt[c - '0'];
+      if (cur == NULL) break;
+    }
+    if (cur != NULL) ans = cur->cnt;
+    cout << ans << "\n";
   }
 }
 ```
