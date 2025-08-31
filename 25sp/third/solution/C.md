@@ -384,8 +384,6 @@ class Solution {
 
 
 ## Binary Search
-{% tabs ThirdC %}
-{% tab ThirdC C++ %}
 ```cpp
 #include <iostream>
 #include <string>
@@ -458,13 +456,11 @@ int main() {
   return 0;
 }
 ```
-{% endtab %}
-{% endtabs %}
+
 
 
 ## Trie
-{% tabs ThirdC %}
-{% tab ThirdC C++ %}
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -510,5 +506,3 @@ int main() {
   }
 }
 ```
-{% endtab %}
-{% endtabs %}
