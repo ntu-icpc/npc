@@ -86,42 +86,6 @@ if __name__ == "__main__":
     print(solution)
 ```
 {% endtab %}
-<!-- {% tab ThirdE C %}
-```c
-#include <stdio.h>
-#include <stdlib.h>
-
-/**
- * @param n: number of stones
- * @param x: an array consisting n integers where the i-th integer represents
- * the x-coordinate of the i-th stone
- * @param y: an array consisting n integers where the i-th integer represents
- * the y-coordinate of the i-th stone
- * @return: return an integer represent the maximum number of stones that can be
- * removed
- */
-int solve(int n, int *x, int *y) {
-  // TODO: Implement the solution
-  int ans = 0;
-  return ans;
-}
-
-int main() {
-  int n;
-  scanf("%d", &n);
-  int *x = (int *)calloc(n, sizeof(int));
-  int *y = (int *)calloc(n, sizeof(int));
-  for (int i = 0; i < n; ++i) {
-    scanf("%d %d", &x[i], &y[i]);
-  }
-  int ans = solve(n, x, y);
-  printf("%d\n", ans);
-  free(x);
-  free(y);
-  return 0;
-}
-```
-{% endtab %} -->
 {% tab ThirdE C++ %}
 ```cpp
 #include <iostream>
