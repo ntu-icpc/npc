@@ -1,12 +1,12 @@
 ---
-title: F - Distance
+title: F - Polygon
 layout: page
 parent: NPC25 Welcome AY25/26 Contest Solution
 ---
 
-# F - Distance
+# F - Polygon
 
-## $\mathcal{O}(n^5)$ Solution
+## $$\mathcal{O}(n^5)$$ Solution
 
 {% tabs ThirdFn5 %}
 {% tab ThirdFn5 Python %}
@@ -328,7 +328,7 @@ func max(a, b int64) int64 {
 {% endtab %}
 {% endtabs %}
 
-## $\mathcal{O}(n^4)$ Solution
+## $$\mathcal{O}(n^4)$$ Solution
 
 {% tabs ThirdFn4 %}
 {% tab ThirdFn4 Python %}
@@ -602,7 +602,7 @@ func main() {
 {% endtab %}
 {% endtabs %}
 
-## $\mathcal{O}(n^3)$ Solution
+## $$\mathcal{O}(n^3)$$ Solution
 
 {% tabs ThirdFn3 %}
 {% tab ThirdFn3 Python %}
