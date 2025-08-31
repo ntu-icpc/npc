@@ -1,7 +1,7 @@
 ---
 title: A - Triangle
 layout: page
-parent: Solutions
+parent: NPC25 The 2nd Contest Solution
 ---
 
 # A - Triangle

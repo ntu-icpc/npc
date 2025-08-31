@@ -1,7 +1,7 @@
 ---
 title: B - Tree 2
 layout: page
-parent: Solutions
+parent: NPC25 The 2nd Contest Solution
 ---
 
 # B - Tree 2

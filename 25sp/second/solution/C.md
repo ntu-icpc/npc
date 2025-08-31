@@ -1,7 +1,7 @@
 ---
 title: C - Subsequence 2
 layout: page
-parent: Solutions
+parent: NPC25 The 2nd Contest Solution
 ---
 
 # C - Subsequence 2
