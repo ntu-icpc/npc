@@ -1,7 +1,7 @@
 ---
 title: D - Knapsack
 layout: page
-parent: Solutions
+parent: NPC25 Welcome AY25/26 Contest Solution
 ---
 
 # D - Knapsack

@@ -1,7 +1,7 @@
 ---
 title: A - Data Compression
 layout: page
-parent: Solutions
+parent: NPC25 Welcome AY25/26 Contest Solution
 ---
 
 # A - Data Compression

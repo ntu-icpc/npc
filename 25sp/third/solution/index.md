@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Solutions
+title: NPC25 Welcome AY25/26 Contest Solution
 parent: NPC25 Welcome AY25/26 Contest
 ---
 
