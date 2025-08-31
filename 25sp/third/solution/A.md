@@ -7,7 +7,7 @@ parent: NPC25 Welcome AY25/26 Contest Solution
 # A - Data Compression
 
 {% tabs ThirdA %}
-{% tab ThirdA Python %}
+<!-- {% tab ThirdA Python %}
 ```python
 class Solution:
     def __init__(self, value):
@@ -75,13 +75,93 @@ if __name__ == "__main__":
 {% tab ThirdA C %}
 ```c
 ```
-{% endtab %}
+{% endtab %} -->
 {% tab ThirdA C++ %}
 ```cpp
+#include <iostream>
+#include <string>
+
+class DataCompression {
+ public:
+  int C;  // initial value C
+
+  DataCompression(int value) { this->C = value; }
+
+  /**
+   * @param x: The parameter for SET_DIRECTION Operation
+   */
+  void setDirection(int x) {
+    // Implement your solution here
+    int mask = (1 << 2) - 1;
+    C &= (~mask);
+    C |= x;
+  }
+
+  /**
+   * @param x: The parameter for SET_OFFSET Operation
+   */
+  void setOffset(int x) {
+    // Implement your solution here
+    int mask = ((1 << 8) - 1) << 2;
+    C &= (~mask);
+    C |= x << 2;
+  }
+
+  /**
+   * @param x: The parameter for SET_ID Operation
+   */
+  void setId(int x) {
+    // Implement your solution here
+    int mask = ((1 << 10) - 1) << 10;
+    C &= (~mask);
+    C |= x << 10;
+  }
+
+  /**
+   * @param x: The parameter for SET_GROUP Operation
+   */
+  void setGroup(int x) {
+    // Implement your solution here
+    int mask = ((1<<10) - 1) << 20;
+    C &= (~mask);
+    C |= x << 20;
+}
+
+  /**
+   * @return: return the current value of C
+   */
+  int getC() { return this->C; }
+};
+
+int main() {
+  int value, q;
+  std::cin >> value >> q;
+  DataCompression* data = new DataCompression(value);
+  for (int i = 0; i < q; ++i) {
+    std::string ope;
+    std::cin >> ope;
+    if (ope == "GET_C")
+      std::cout << data->getC() << "\n";
+    else {
+      int x;
+      std::cin >> x;
+      if (ope == "SET_DIRECTION")
+        data->setDirection(x);
+      else if (ope == "SET_OFFSET")
+        data->setOffset(x);
+      else if (ope == "SET_ID")
+        data->setId(x);
+      else if (ope == "SET_GROUP")
+        data->setGroup(x);
+    }
+  }
+  return 0;
+}
+
 ```
 {% endtab %}
-{% tab ThirdA Java %}
+<!-- {% tab ThirdA Java %}
 ```java
 ```
-{% endtab %}
+{% endtab %} -->
 {% endtabs %}
