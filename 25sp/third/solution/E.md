@@ -86,7 +86,7 @@ if __name__ == "__main__":
     print(solution)
 ```
 {% endtab %}
-{% tab ThirdE C %}
+<!-- {% tab ThirdE C %}
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -121,7 +121,7 @@ int main() {
   return 0;
 }
 ```
-{% endtab %}
+{% endtab %} -->
 {% tab ThirdE C++ %}
 ```cpp
 #include <iostream>
