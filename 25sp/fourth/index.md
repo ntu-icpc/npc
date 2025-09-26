@@ -8,7 +8,7 @@ nav_order: 4
 # NPC25: Stage 4 - Game
 
 <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-<a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="flip3" data-timezone="Asia/Singapore" data-date="2025-08-30 14:00">
+<a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="flip3" data-timezone="Asia/Singapore" data-date="2025-10-11 14:00">
 Nanyang Programming Contest 2025: Stage 4 - Game
 </a>
 
