@@ -2,7 +2,7 @@
 title: NPC25 Welcome AY25/26 Contest
 layout: page
 parent: Spring & Fall 2025 Contests
-nav_order: 2
+nav_order: 3
 ---
 
 # NPC25: Stage 3 - Welcome AY25/26 Contest
