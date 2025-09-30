@@ -30,3 +30,7 @@ The contest discussion is conducted to discuss the solutions to the problems in 
 ## Rules of Contest
 
 The rule of the contest is same as the first contest. [here](/npc/25sp)
+
+## Registration 
+
+You may register through the link [here](https://forms.gle/crZAdXHfR4wMeZB5A)
