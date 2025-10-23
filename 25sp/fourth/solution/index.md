@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NPC25 The 4th Contest Solution
-parent: NPC25 The 4th Contest
+parent: NPC25 Game
 ---
 
 # NPC25 The 4th Contest Solution

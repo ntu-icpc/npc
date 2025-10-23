@@ -33,4 +33,4 @@ The rule of the contest is same as the first contest. [here](/npc/25sp)
 
 ## Registration 
 
-You may register through the link [here](https://forms.gle/crZAdXHfR4wMeZB5A)
+You may register through the link [here](https://forms.gle/crZAdXHfR4wMeZB5A) 
