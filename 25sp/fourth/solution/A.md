@@ -7,7 +7,8 @@ parent: NPC25 The 4th Contest Solution
 # A - Card
 
 ## Subtask 1
-
+{% tabs FourthA1 %}
+{% tab FourthA1 C %}
 ```c
 #include <stdio.h>
 
@@ -24,7 +25,8 @@ int main() {
   return 0;
 }
 ```
-
+{% endtab %}
+{% tab FourthA1 Cpp %}
 ```cpp
 #include <iostream>
 
@@ -44,7 +46,8 @@ int main() {
   return 0;
 }
 ```
-
+{% endtab %}
+{% tab FourthA1 Java %}
 ```java
 import java.util.Scanner;
 
@@ -61,13 +64,15 @@ public class Solution_50 {
   }
 }
 ```
-
+{% endtab %}
+{% tab Fourth1 Python %}
 ```python
 if __name__ == "__main__":
     n = int(input())
     print(sum(map(int, input().split())))
 ```
-
+{% endtab %}
+{% tab FourthA1 Rust %}
 ```rust
 use std::io;
 
@@ -86,6 +91,8 @@ fn main() {
     println!("{}", sum);
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Solution
 

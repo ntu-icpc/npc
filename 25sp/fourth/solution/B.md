@@ -7,7 +7,8 @@ parent: NPC25 The 4th Contest Solution
 # B - Glass Bridge
 
 ## Subtask 1
-
+{% tabs FourthB1 %}
+{% tab FourthB1 C %}
 ```c
 #include <stdbool.h>
 #include <stdio.h>
@@ -66,6 +67,8 @@ int main() {
   return 0;
 }
 ```
+{% endtab %}
+{% tab FourthB1 Python %}
 ```python
 from typing import List
 
@@ -111,11 +114,13 @@ if __name__ == "__main__":
     solution = Solution.solve(n, m, k, favors, reals)
     print(solution)
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Solution
 
-{% tabs FourthA %}
-{% tab FourthA Python %}
+{% tabs FourthB %}
+{% tab FourthB Python %}
 ```python
 from typing import List
 
@@ -157,7 +162,7 @@ if __name__ == "__main__":
     print(solution)
 ```
 {% endtab %}
-{% tab FourthA C %}
+{% tab FourthB C %}
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -221,7 +226,7 @@ int main() {
 
 ```
 {% endtab %}
-{% tab FourthA C++ %}
+{% tab FourthB C++ %}
 ```cpp
 #include <iostream>
 #include <numeric>
@@ -279,7 +284,7 @@ int main() {
 }
 ```
 {% endtab %}
-{% tab FourthA Java %}
+{% tab FourthB Java %}
 ```java
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -343,7 +348,7 @@ public class Solution {
 
 ```
 {% endtab %}
-{% tab FourthA Rust %}
+{% tab FourthB Rust %}
 ```rust
 use std::io::{self, BufRead};
 

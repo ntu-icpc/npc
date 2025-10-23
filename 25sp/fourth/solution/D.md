@@ -138,8 +138,8 @@ int main() {
 
 ## Solution (Minimum Spanning Tree)
 
-{% tabs FourthC %}
-{% tab FourthC Python %}
+{% tabs FourthD %}
+{% tab FourthD Python %}
 ```python
 from typing import List, Tuple
 
@@ -204,7 +204,7 @@ if __name__ == "__main__":
     print(result)
 ```
 {% endtab %}
-{% tab FourthC C %}
+{% tab FourthD C %}
 ```c
 /**
  * This template provides a complete implementation of a graph data structure
@@ -483,7 +483,7 @@ int main() {
 }
 ```
 {% endtab %}
-{% tab FourthC C++ %}
+{% tab FourthD C++ %}
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -530,7 +530,7 @@ int main() {
 
 ```
 {% endtab %}
-{% tab FourthC Java %}
+{% tab FourthD Java %}
 ```java
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -667,7 +667,7 @@ class Solution {
 
 ```
 {% endtab %}
-{% tab FourthC Rust %}
+{% tab FourthD Rust %}
 ```rust
 use std::io;
 
