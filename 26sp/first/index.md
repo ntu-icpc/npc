@@ -8,7 +8,7 @@ nav_order: 1
 # NPC26: Stage 1
 
 <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-<a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="flip3" data-timezone="Asia/Singapore" data-date="2025-03-15 14:00">
+<a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="flip3" data-timezone="Asia/Singapore" data-date="2026-03-14 14:00">
 Nanyang Programming Contest 2026: Stage 1
 </a>
 
