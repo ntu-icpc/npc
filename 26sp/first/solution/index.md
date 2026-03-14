@@ -1,7 +1,7 @@
 ---
 layout: page
-title: NPC25 Welcome AY25/26 Contest Solution
-parent: NPC25 Welcome AY25/26 Contest
+title: NPC26 The 1st Contest Solution
+parent: NPC26 The 1st Contest
 ---
 
 # NPC26: Stage 1 Solution
